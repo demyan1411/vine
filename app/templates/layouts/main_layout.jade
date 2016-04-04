@@ -1,0 +1,21 @@
+﻿include ../common/_mixins
+
+doctype html
+
+html(lang='ru-RU')
+	include ../common/head.jade
+	body
+		<!--[if lt IE 7]>
+		<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
+		<![endif]-->
+
+		.main
+			.main--content
+				include ../common/header.jade
+				include ../common/nav.jade
+				
+				block content
+						
+			include ../common/footer.jade
+			
+		include ../common/scripts.jade

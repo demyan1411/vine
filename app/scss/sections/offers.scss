@@ -1,0 +1,40 @@
+.offers {
+  .wrapper {
+    border-top: 1px solid $yellowColor;
+    border-bottom: 1px solid $yellowColor;
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 20px;
+    color: $yellowColor;
+    font-family: $fserm;
+    margin-bottom: 27px;
+  }
+  &__block {
+    width: 320px;
+    background: #f8f6f4;
+    padding: 42px 25px 42px 20px;
+    float: left;
+    margin-right: 15px;
+    position: relative;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__img {
+    @include middle;
+    margin-right: 15px;
+  }
+  &__text {
+    font-family: $fserm;
+    font-size: 18px;
+    line-height: 20px;
+    color: $yellowColor;
+    max-width: 150px;
+    @include middle;
+  }
+}

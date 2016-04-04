@@ -1,0 +1,16 @@
+block products-link
+
+-var menu = { 'Тихие вина': '', 'Шампанские и игристые вина': '', 'Коньяки': '' }
+-var menu_view = { 'плитка': 'products-tile.html', 'список': 'products-list.html' }
+
+nav.products-nav
+  .wrapper
+    .products-nav__first-menu
+      each val, key in menu
+        a.products-nav__first-menu--link(href=val, class={active: selected === key})= key
+    
+    .products-nav__view-menu
+      each val, key in menu_view
+        a.products-nav__view-menu--link(href=val, class={active: view_selected === key})
+          span.products-nav__span= key
+      

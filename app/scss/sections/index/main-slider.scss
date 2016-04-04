@@ -1,0 +1,126 @@
+.main-slider {
+  height: 418px;
+  overflow: hidden;
+
+  &__slide {
+    @include clearfix;
+    color: #603409;
+    height: 100%;
+
+    &--1 {
+      .main-slider__left {
+        background-image: url(../img/main-slider__left--1.jpg);
+      }
+      .main-slider__right {
+        background-image: url(../img/main-slider__right--1.jpg);
+      }
+    }
+    &--2 {
+      .main-slider__left {
+        background-image: url(../img/main-slider__left--2.jpg);
+      }
+      .main-slider__right {
+        background-image: url(../img/main-slider__right--2.jpg);
+      }
+    }
+    &--3 {
+      .main-slider__left {
+        background-image: url(../img/main-slider__left--1.jpg);
+      }
+      .main-slider__right {
+        background-image: url(../img/main-slider__right--1.jpg);
+      }
+    }
+  }
+  &__left {
+    width: 50%;
+    height: 100%;
+    padding-top: 70px;
+    text-align: center;
+    float: left;
+    background: #e4c17f right 0 no-repeat;
+    background-size: cover;
+  }
+  &__title {
+    font-family: $fserm;
+    font-size: 50px;
+    line-height: 53px;
+    margin-bottom: 30px;
+  }
+  &__text {
+    font-size: 22px;
+    line-height: 26px;
+    max-width: 420px;
+    margin: 0 auto;
+
+    &::after {
+      content: '';
+      width: 40px;
+      height: 2px;
+      background: #603409;
+      display: block;
+      margin: 0 auto;
+      margin-top: 38px;
+      margin-bottom: 60px;
+    }
+  }
+  &__link {
+    font-family: $fsbki;
+    font-weight: bold;
+    @include htd;
+  }
+  &__right {
+    width: 50%;
+    height: 100%;
+    float: right;
+    background: #4f1d08 0 0 no-repeat;
+    background-size: cover;
+  }
+  &__bottle {
+
+  }
+}
+.bx-wrapper {
+  border: none;
+  box-shadow: none;
+
+  .bx-pager.bx-default-pager a {
+    background: none;
+    border-radius: 50%;
+    border: 1px solid $yellowColor;
+    width: 9px;
+    height: 9px;
+    margin: 0 10px;
+
+    &.active {
+      border: 8px solid #fff;
+      background: #000;
+      width: 22px;
+      height: 22px;
+      box-shadow: 0 0 1px 1px $yellowColor;
+    }
+  }
+  .bx-pager {
+    bottom: -42px;
+  }
+
+  .bx-controls-direction {
+    width: 990px;
+    position: relative;
+    margin: 0 auto;
+  }
+  .bx-controls-direction a {
+    top: auto;
+    bottom: -40px;
+    width: 10px;
+    height: 16px;
+  }
+  .bx-prev, .bx-prev:hover {
+    background: url(../img/prev.jpg) 0 0 no-repeat !important;
+    left: 0;
+  }
+  .bx-next, .bx-next:hover {
+    background: url(../img/next.jpg) 0 0 no-repeat !important;
+    right: 0;
+  }
+}

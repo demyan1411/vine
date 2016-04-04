@@ -1,0 +1,122 @@
+.products {
+  margin-bottom: 30px;
+  
+  &__block {
+    width: 320px;
+    height: 640px;
+    background: #f8f6f4;
+    padding: 225px 30px 30px;
+    float: left;
+    margin-right: 15px;
+    position: relative;
+    text-align: center;
+
+    &:nth-child(2) {
+      padding: 205px 25px 30px;
+    }
+
+    &:after {
+      content: '';
+      width: 330px;
+      height: 650px;
+      position: absolute;
+      left: -5px;
+      top: -5px;
+      background: url(../img/products-hover.png) 0 0 no-repeat;
+      display: none;
+      z-index: 1;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+    .products__img {
+      display: block;
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &1 {
+        background: url(../img/products1.png) 0 0 no-repeat;
+      }
+      &2 {
+        background: url(../img/products2.png) 0 0 no-repeat;
+      }
+      &3 {
+        background: url(../img/products3.png) 0 0 no-repeat;
+      }
+    }
+
+    &:hover {
+      &:after {
+        display: block;
+      }
+
+      .products__img {
+        width: 170px;
+        height: 170px;
+        top: 27px;
+
+        &1 {
+          background: url(../img/products1-hover.png) 0 0 no-repeat;
+        }
+        &2 {
+          background: url(../img/products2-hover.png) 0 0 no-repeat;
+        }
+        &3 {
+          background: url(../img/products3-hover.png) 0 0 no-repeat;
+        }
+      }
+    }
+  }
+
+  &__img {
+    width: 140px;
+    height: 140px;
+  }
+
+  &__title,
+  &__text,
+  &__button {
+    position: relative;
+    z-index: 2;
+  }
+  &__title {
+    font-family: $fserm;
+    font-size: 24px;
+    line-height: 30px;
+    color: $yellowColor;
+    position: relative;
+    margin-bottom: 25px;
+
+    &:after {
+      content: '';
+      width: 63px;
+      height: 2px;
+      background: $yellowColor;
+      position: absolute;
+      bottom: -13px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__text {
+    font-size: 12px;
+    line-height: 18px;
+    color: #000;
+  }
+  &__button {
+    padding: 10px 22px;
+    background: $yellowColor;
+    border-radius: 5px;
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    bottom: 30px;
+    left: 50%;
+    outline: none;
+    border: none;
+    transform: translateX(-50%);
+  }
+}

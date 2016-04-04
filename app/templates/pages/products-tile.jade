@@ -1,0 +1,12 @@
+block link
+  -var selected = 'продукция';
+  
+block products-link
+  -var selected = 'Шампанские и игристые вина';
+  -var view_selected = 'плитка'
+  
+extends ../layouts/main_layout.jade
+
+block content
+  include ../common/products-nav.jade
+  //- include ../common/products-tile/products-tile.jade

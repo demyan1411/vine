@@ -1,0 +1,99 @@
+.header {
+  @include clearfix;
+  padding-top: 40px;
+  padding-bottom: 84px;
+
+  &__logo {
+    &-combine {
+      display: block;
+      float: left;
+      margin-top: 35px;
+    }
+    &-house {
+      width: 350px;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__block {
+    float: right;
+    text-align: right;
+  }
+  &__language {
+    &-list {
+      margin-bottom: 45px;
+    }
+    &-item {
+      display: inline-block;
+      vertical-align: middle;
+
+      &:last-child {
+
+        &:before {
+          content: '';
+          width: 1px;
+          height: 25px;
+          background: #dedede;
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 6px;
+          margin-right: 11px;
+        }
+      }
+    }
+    &-link {
+      font-family: $fsbk;
+      color: $yellowColor;
+      text-decoration: underline;
+      text-transform: uppercase;
+      display: inline-block;
+      vertical-align: middle;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      &.active {
+        color: #757575;
+        text-decoration: none;
+        margin-top: -2px;
+      }
+    }
+  }
+  &__contact {
+    display: block;
+    color: $yellowColor;
+    margin-bottom: 10px;
+
+    &:before {
+      content: '';
+      @include middle;
+      width: 24px;
+      height: 24px;
+      float: left;
+      margin-right: 5px;
+    }
+
+    &--phone {
+      font-family: $fsbk;
+      letter-spacing: -.3px;
+
+      &:before {
+        background: url(../img/phone.png) 0 0 no-repeat;
+      }
+    }
+
+    &--mail {
+      font-family: $fsbki;
+      letter-spacing: .5px;
+       @include htd;
+      &:before {
+        background: url(../img/mail.png) 0 0 no-repeat;
+      }
+    }
+  }
+}

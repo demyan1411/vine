@@ -1,0 +1,8 @@
+block link
+
+-var menu = { 'о компании': '/', 'продукция': 'products.html', 'дистрибуция': '', 'новости': '', 'фотогалерея': '', 'наши партнеры': '', 'Контакты': 'contacts.html' }
+
+nav.nav
+  .wrapper
+    each val, key in menu
+      a.nav__link(href=val, class={active: selected === key})= key

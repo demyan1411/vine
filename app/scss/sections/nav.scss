@@ -1,0 +1,41 @@
+.nav {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+
+  &__link {
+    display: inline-block;
+    vertical-align: top;
+    font-family: $fserm;
+    font-size: 12px;
+    line-height: 15px;
+    color: $yellowColor;
+    text-transform: uppercase;
+    margin: 0 28px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      color: #000;
+    }
+    &.active {
+      color: #000;
+      position: relative;
+
+      &:after {
+        content: '';
+        width: 40px;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

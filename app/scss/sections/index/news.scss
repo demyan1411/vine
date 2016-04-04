@@ -1,0 +1,62 @@
+.index-news {
+  .wrapper {
+    border-top: 1px solid $yellowColor;
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 19px;
+    color: $yellowColor;
+    font-family: $fserm;
+    margin-bottom: 27px;
+  }
+  &__block {
+    width: 320px;
+    height: 335px;
+    background: #f8f6f4;
+    padding: 45px 22px 23px 25px;
+    float: left;
+    margin-right: 15px;
+    position: relative;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__date {
+    font-family: $fsbki;
+    color: $yellowColor;
+    margin-bottom: 20px;
+  }
+  &__name {
+    font-family: $fserm;
+    font-size: 20px;
+    line-height: 24px;
+    color: $yellowColor;
+    margin-bottom: 16px;
+  }
+  &__text {
+
+  }
+  &__link {
+    font-size: 12px;
+    line-height: 15px;
+    font-family: $fsbki;
+    color: $yellowColor;
+    position: absolute;
+    bottom: 20px;
+    @include htd;
+
+    &:before {
+      content: '';
+      width: 22px;
+      height: 26px;
+      background: url(../img/vine.png) 0 0 no-repeat;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 15px;
+    }
+  }
+}

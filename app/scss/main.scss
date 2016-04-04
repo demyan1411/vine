@@ -1,0 +1,28 @@
+﻿/* --------- mixins --------- */
+
+@import "_includes/mixins";
+
+/* --------- variables --------- */
+
+@import "_includes/variables";
+
+/* --------- fonts --------- */
+
+@import "_includes/fonts";
+
+/* --------- sections --------- */
+
+@import "sections/default.scss";
+@import "sections/layout.scss";
+@import "sections/header.scss";
+@import "sections/footer.scss";
+
+@import "sections/nav.scss";
+@import "sections/offers.scss";
+@import "sections/stamps.scss";
+
+@import "sections/index/main-slider.scss";
+@import "sections/index/news.scss";
+
+@import "sections/products/products.scss";
+@import "sections/products-nav.scss";
