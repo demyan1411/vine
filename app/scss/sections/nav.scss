@@ -19,10 +19,9 @@
     &:last-child {
       margin-right: 0;
     }
+
+    &.active,
     &:hover {
-      color: #000;
-    }
-    &.active {
       color: #000;
       position: relative;
 

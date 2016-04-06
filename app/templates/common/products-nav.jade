@@ -11,6 +11,11 @@ nav.products-nav
     
     .products-nav__view-menu
       each val, key in menu_view
-        a.products-nav__view-menu--link(href=val, class={active: view_selected === key})
-          span.products-nav__span= key
+        if view_selected === key
+          span.products-nav__view-menu--link.active
+            span.products-nav__span= key
+        else
+          a.products-nav__view-menu--link(href=val)
+            span.products-nav__span= key
+        
       

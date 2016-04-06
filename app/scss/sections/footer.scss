@@ -1,6 +1,6 @@
 ﻿.footer {
 	padding-bottom: 26px;
-	
+
 	&__top {
 		@include clearfix;
 		border-top: 1px solid $yellowColor;
@@ -87,6 +87,10 @@
 		}
 		&.ok {
 			background: url(../img/ok.png) 0 0 no-repeat;
+		}
+
+		&:hover {
+			background-position: 0 -31px;
 		}
 	}
 }

@@ -1,0 +1,61 @@
+.products-tile {
+  text-align: center;
+
+  &__blocks {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+    @include clearfix;
+  }
+  &__block {
+    width: 320px;
+    height: 380px;
+    float: left;
+    margin-right: 15px;
+    background: #f8f6f4;
+    position: relative;
+    text-align: center;
+    padding: 15px 30px 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:after {
+      content: '';
+      width: 328px;
+      height: 389px;
+      position: absolute;
+      left: -4px;
+      top: -4px;
+      background: url(../img/products-tile-hover.png) 0 0 no-repeat;
+      display: none;
+      z-index: 1;
+    }
+
+    &:hover {
+      background: #fff;
+      
+      &:after {
+        display: block;
+      }
+    }
+  }
+  &__img {
+    display: inline-block;
+    margin-bottom: 6px;
+  }
+  &__title {
+    font-family: $fserm;
+    font-size: 20px;
+    color: $yellowColor;
+    line-height: 23px;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: 12px;
+    color: #000;
+    line-height: 15px;
+    margin-bottom: 5px;
+  }
+}

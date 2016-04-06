@@ -31,26 +31,9 @@
       &__img {
         display: none;
         &--hover {
-          display: block;;
+          display: block;
         }
       }
     }
   }
-}
-.slick-next, .slick-prev {
-  width: 10px;
-  height: 16px;
-  opacity: 1;
-  &:before {
-    opacity: 1;
-    color: transparent;
-  }
-}
-.slick-prev {
-  background: url(../img/prev.jpg) 0 0 no-repeat !important;
-  left: -68px;
-}
-.slick-next {
-  background: url(../img/next.jpg) 0 0 no-repeat !important;
-  right: -68px;
 }

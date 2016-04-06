@@ -1,0 +1,31 @@
+.slick-slider {
+  margin-bottom: 0;
+}
+.slick-next, .slick-prev {
+  width: 10px;
+  height: 17px;
+  opacity: 1;
+  z-index: 10;
+
+  &:before {
+    opacity: 1;
+    color: transparent;
+  }
+}
+
+.slick-prev {
+  background: url(../img/prev.jpg) 0 0 no-repeat;
+  left: -68px;
+
+  &:hover {
+    background: url(../img/prev.jpg) 0 -17px no-repeat;
+  }
+}
+.slick-next {
+  background: url(../img/next.jpg) 0 0 no-repeat;
+  right: -68px;
+
+  &:hover {
+    background: url(../img/next.jpg) 0 -17px no-repeat;
+  }
+}

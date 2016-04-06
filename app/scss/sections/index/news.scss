@@ -16,6 +16,7 @@
     width: 320px;
     height: 335px;
     background: #f8f6f4;
+    border: 1px solid transparent;
     padding: 45px 22px 23px 25px;
     float: left;
     margin-right: 15px;
@@ -23,6 +24,15 @@
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &:hover {
+      background: #fff;
+      border: 1px solid $yellowColor;
+
+      .index-news__name {
+        color: #000;
+      }
     }
   }
   &__date {

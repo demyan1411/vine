@@ -6,7 +6,7 @@
   line-height: 15px;
 
   &__first-menu {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 
     &--link {
       font-family: $fserm;
@@ -21,11 +21,12 @@
   }
 
   &__view-menu {
+    margin-bottom: 20px;
+    
     &--link {
       font-family: $fsbki;
       color: $yellowColor;
       margin: 0 9px;
-
 
       &:before {
         content: '';

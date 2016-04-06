@@ -4,14 +4,11 @@ $(document).ready(function() {
     return e.preventDefault();
   });
 
-  // $('.js-main-slider').slick({
-  //   dots: true,
-  //   slidesToShow: 1
-  // });
-
-  $('.js-main-slider').bxSlider({
-      autoControls: true,
-      touchEnabled: true
+  $('.js-main-slider').slick({
+    dots: true,
+    arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1
   });
 
   $('.js-stamps-slider').slick({
@@ -21,4 +18,16 @@ $(document).ready(function() {
     variableWidth: true
 	});
 
+  $('.js-products-list-slider').bxSlider({
+    mode: 'fade',
+    slideWidth: 135,
+    pagerCustom: '.js-products-list-pager'
+	});
+
 });
+// 
+// $(window).load(function() {
+//   $('.main-slider--wrapper').css({
+//     'overflow': 'visible'
+//   });
+// });
