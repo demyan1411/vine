@@ -28,6 +28,4 @@ $(document).ready(function() {
       pagerCustom: $pager
   	});
   });
-
-
 });
