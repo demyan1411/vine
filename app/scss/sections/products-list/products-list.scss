@@ -2,9 +2,13 @@
   &__block {
     @include clearfix;
     border-bottom: 1px solid $yellowColor;
-    padding-bottom: 170px;
+    padding-bottom: 30px;
     position: relative;
-    padding-top: 2px;
+    padding-top: 30px;
+
+    &:last-child {
+      border-bottom: none;
+    }
   }
   &__left {
     float: left;
@@ -15,7 +19,6 @@
     line-height: 39px;
     color: $yellowColor;
     font-family: $fserm;
-    margin-top: 30px;
 
     &:after {
       content: '';
@@ -87,6 +90,109 @@
   &__slider {
     margin: 0 auto;
     text-align: center;
+
+    .products-list__slide {
+      width: 135px !important;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &--not {
+      .products-list__slide {
+        transform: translateX(0);
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .bx-wrapper {
+    border: none;
+    box-shadow: none;
+    margin-bottom: 0;
+    text-align: center;
+
+    .bx-prev,
+    .bx-next {
+      top: auto;
+      bottom: -75px;
+      width: 10px;
+      height: 17px;
+    }
+    .bx-prev {
+      left: -38px;
+      background: url(../img/prev.jpg) 0 0 no-repeat;
+      &:hover {
+        background: url(../img/prev.jpg) 0 -17px no-repeat;
+      }
+    }
+    .bx-next {
+      right: -45px;
+      background: url(../img/next.jpg) 0 0 no-repeat;
+
+      &:hover {
+        background: url(../img/next.jpg) 0 -17px no-repeat;
+      }
+    }
+  }
+
+  &__block {
+    &--four {
+      .bx-wrapper {
+        .bx-prev {
+          left: -120px;
+        }
+        .bx-next {
+          right: -125px;
+        }
+      }
+    }
+  }
+
+  &__pager {
+    text-align: center;
+
+    &-link {
+      display: inline-block;
+      vertical-align: bottom;
+      text-align: center;
+      width: 80px;
+      margin: 0 15px;
+      @include htd;
+
+      &:after {
+        content: '';
+        width: 10px;
+        height: 10px;
+
+        border-radius: 100%;
+
+        display: block;
+        margin: 0 auto;
+        margin-top: 8px;
+
+        background: transparent;
+        border: 1px solid #b1aead;
+      }
+
+      &:hover, &.active {
+        &:after {
+          background: #b1aead;
+          border: 1px solid transparent;
+        }
+      }
+    }
+    &-text {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  &__variations {
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: $fsm;
+    margin-bottom: 10px;
   }
 }
 

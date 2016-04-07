@@ -18,16 +18,16 @@ $(document).ready(function() {
     variableWidth: true
 	});
 
-  $('.js-products-list-slider').bxSlider({
-    mode: 'fade',
-    slideWidth: 135,
-    pagerCustom: '.js-products-list-pager'
-	});
+  $('.js-products-list-slider').each(function () {
+    var $this = $(this);
+    var $pager = $this.siblings('.js-products-list-pager');
+
+    $this.bxSlider({
+      mode: 'fade',
+      slideWidth: 200,
+      pagerCustom: $pager
+  	});
+  });
+
 
 });
-// 
-// $(window).load(function() {
-//   $('.main-slider--wrapper').css({
-//     'overflow': 'visible'
-//   });
-// });
