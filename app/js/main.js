@@ -28,4 +28,8 @@ $(document).ready(function() {
       pagerCustom: $pager
   	});
   });
+
+  if($('#map').length) {
+    ymaps.ready(initMap);
+  }
 });

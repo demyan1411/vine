@@ -1,0 +1,45 @@
+.form {
+  .wrapper {
+    padding-bottom: 50px;
+    border-bottom: 1px solid $yellowColor;
+  }
+  &__title {
+    border-top: 1px solid $yellowColor;
+    font-family: $fserm;
+    font-size: 30px;
+    line-height: 33px;
+    color: $yellowColor;
+    padding-top: 28px;
+    margin-bottom: 22px;
+  }
+  &__desc {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 5px;
+  }
+  &__input,
+  &__textarea {
+    width: 290px;
+    padding: 8px;
+    border: 1px solid #999;
+    outline: 0;
+    border-radius: 5px;
+    font-family: $fsbki;
+    margin-bottom: 20px;
+    display: block;
+  }
+  &__textarea {
+    width: 500px;
+    height: 220px;
+    resize: none;
+  }
+  &__button {
+    width: 240px;
+    background: $yellowColor;
+    border: none;
+    outline: 0;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 5px;
+  }
+}

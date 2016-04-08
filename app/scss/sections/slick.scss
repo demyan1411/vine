@@ -6,26 +6,39 @@
   height: 17px;
   opacity: 1;
   z-index: 10;
+  display: block;
 
   &:before {
     opacity: 1;
     color: transparent;
+    display: none;
   }
 }
 
 .slick-prev {
   background: url(../img/prev.jpg) 0 0 no-repeat;
-  left: -68px;
+  left: -41px;
 
-  &:hover {
+  &:focus {
+    background: url(../img/prev.jpg) 0 0 no-repeat;
+  }
+
+  &:hover,
+   {
     background: url(../img/prev.jpg) 0 -17px no-repeat;
   }
 }
 .slick-next {
   background: url(../img/next.jpg) 0 0 no-repeat;
-  right: -68px;
+  right: -41px;
 
-  &:hover {
+  &:focus {
+    background: url(../img/next.jpg) 0 0 no-repeat;
+  }
+
+  &:hover,
+   {
     background: url(../img/next.jpg) 0 -17px no-repeat;
   }
+
 }
