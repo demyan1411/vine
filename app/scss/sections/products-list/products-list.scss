@@ -8,6 +8,7 @@
 
     &:last-child {
       border-bottom: none;
+      margin-bottom: 25px;
     }
   }
   &__left {
@@ -88,11 +89,12 @@
   }
 
   &__slider {
+    width: 212px;
     margin: 0 auto;
     text-align: center;
 
     .products-list__slide {
-      width: 135px !important;
+      width: 197px ;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -106,19 +108,18 @@
   }
 
   .bx-wrapper {
-    border: none;
-    box-shadow: none;
-    margin-bottom: 0;
-    text-align: center;
+    margin-bottom: 5px;
 
     .bx-viewport {
-      // min-height: 310px;
+      border: none;
+      box-shadow: none;
+      height: 379px !important;
     }
 
     .bx-prev,
     .bx-next {
       top: auto;
-      bottom: -75px;
+      bottom: -85px;
       width: 10px;
       height: 17px;
     }
@@ -159,8 +160,8 @@
       display: inline-block;
       vertical-align: bottom;
       text-align: center;
-      width: 80px;
       margin: 0 15px;
+      width: 80px;
       @include htd;
 
       &:after {
@@ -184,6 +185,9 @@
           border: 1px solid transparent;
         }
       }
+    }
+    &-img {
+      width: 40px;
     }
     &-text {
       font-size: 12px;

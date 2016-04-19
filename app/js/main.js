@@ -24,7 +24,7 @@ $(document).ready(function() {
 
     $this.bxSlider({
       mode: 'fade',
-      slideWidth: 200,
+      slideWidth: 197,
       pagerCustom: $pager
   	});
   });

@@ -1,0 +1,117 @@
+.news {
+  .wrapper {
+    border-top: 1px solid $yellowColor;
+    padding-top: 30px;
+  }
+  &__block {
+    width: 320px;
+    height: 320px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background: #f8f6f4;
+    position: relative;
+    padding: 20px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:after {
+      content: '';
+      background: url(../img/news-hover.png) 0 0 no-repeat;
+      width: 328px;
+      height: 328px;
+      position: absolute;
+      left: -4px;
+      top: -4px;
+      display: none;
+      z-index: 1;
+    }
+
+    &:hover {
+      background: #fff;
+      &::after {
+        display: block;
+      }
+    }
+  }
+  &__date {
+    font-family: $fsbki;
+    font-size: 14px;
+    line-height: 17px;
+    color: #757575;
+    margin-bottom: 20px;
+  }
+  &__title {
+    font-family: $fserm;
+    font-size: 20px;
+    line-height: 24px;
+    color: $yellowColor;
+    margin-bottom: 12px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  &__img {
+    display: block;
+  }
+  &__link {
+    font-family: $fsbki;
+    font-size: 12px;
+    line-height: 15px;
+    color: $yellowColor;
+    position: absolute;
+    bottom: 17px;
+    @include htd;
+
+    &:before {
+      content: '';
+      width: 22px;
+      height: 26px;
+      background: url(../img/grapes.png) 0 0 no-repeat;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  }
+  &__pages {
+    text-align: center;
+    margin: 15px 0 45px;
+  }
+  &__page {
+    margin: 0 10px;
+    font-family: $fsbki;
+    font-size: 18px;
+    line-height: 21px;
+    color: $yellowColor;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+      // text-decoration: underline;
+      color: #000;
+      border-bottom: 2px solid #000;
+    }
+  }
+
+  &__prev,
+  &__next {
+    width: 10px;
+    height: 17px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+
+    &:hover {
+      background-position: 0 -17px;
+    }
+  }
+  &__next {
+    background: url(../img/next.jpg) 0 0 no-repeat;
+  }
+  &__prev {
+    background: url(../img/prev.jpg) 0 0 no-repeat;
+  }
+}

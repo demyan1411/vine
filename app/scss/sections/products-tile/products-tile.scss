@@ -35,7 +35,7 @@
 
     &:hover {
       background: #fff;
-      
+
       &:after {
         display: block;
       }
@@ -44,6 +44,8 @@
   &__img {
     display: inline-block;
     margin-bottom: 6px;
+    width: 120px;
+    height: 230px;
   }
   &__title {
     font-family: $fserm;

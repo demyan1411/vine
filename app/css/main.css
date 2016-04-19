@@ -296,7 +296,8 @@ body {
   padding-bottom: 15px; }
 
 .offers__title {
-  font-size: 18px;
+  font-size: 12px;
+  text-transform: uppercase;
   line-height: 20px;
   color: #ae915f;
   font-family: "FedraSerifBPro-Medium";
@@ -475,7 +476,8 @@ body {
   padding-bottom: 15px; }
 
 .index-news__title {
-  font-size: 16px;
+  font-size: 12px;
+  text-transform: uppercase;
   line-height: 19px;
   color: #ae915f;
   font-family: "FedraSerifBPro-Medium";
@@ -725,7 +727,9 @@ body {
         display: block; }
   .products-tile__img {
     display: inline-block;
-    margin-bottom: 6px; }
+    margin-bottom: 6px;
+    width: 120px;
+    height: 230px; }
   .products-tile__title {
     font-family: "FedraSerifBPro-Medium";
     font-size: 20px;
@@ -749,7 +753,8 @@ body {
   .products-list__block:after {
     clear: both; }
   .products-list__block:last-child {
-    border-bottom: none; }
+    border-bottom: none;
+    margin-bottom: 25px; }
 
 .products-list__left {
   float: left;
@@ -817,10 +822,11 @@ body {
       margin-bottom: 0; }
 
 .products-list__slider {
+  width: 212px;
   margin: 0 auto;
   text-align: center; }
   .products-list__slider .products-list__slide {
-    width: 135px !important;
+    width: 197px;
     left: 50%;
     transform: translateX(-50%); }
   .products-list__slider--not .products-list__slide {
@@ -828,14 +834,15 @@ body {
     margin-top: 30px; }
 
 .products-list .bx-wrapper {
-  border: none;
-  box-shadow: none;
-  margin-bottom: 0;
-  text-align: center; }
+  margin-bottom: 5px; }
+  .products-list .bx-wrapper .bx-viewport {
+    border: none;
+    box-shadow: none;
+    height: 379px !important; }
   .products-list .bx-wrapper .bx-prev,
   .products-list .bx-wrapper .bx-next {
     top: auto;
-    bottom: -75px;
+    bottom: -85px;
     width: 10px;
     height: 17px; }
   .products-list .bx-wrapper .bx-prev {
@@ -861,8 +868,8 @@ body {
     display: inline-block;
     vertical-align: bottom;
     text-align: center;
-    width: 80px;
     margin: 0 15px;
+    width: 80px;
     text-decoration: underline; }
     .products-list__pager-link:hover {
       text-decoration: none; }
@@ -879,6 +886,8 @@ body {
     .products-list__pager-link:hover:after, .products-list__pager-link.active:after {
       background: #b1aead;
       border: 1px solid transparent; }
+  .products-list__pager-img {
+    width: 40px; }
   .products-list__pager-text {
     font-size: 12px;
     line-height: 18px; }
@@ -889,6 +898,107 @@ body {
   line-height: 18px;
   font-family: "FedraSansPro-Medium";
   margin-bottom: 10px; }
+
+.news .wrapper {
+  border-top: 1px solid #ae915f;
+  padding-top: 30px; }
+
+.news__block {
+  width: 320px;
+  height: 320px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  background: #f8f6f4;
+  position: relative;
+  padding: 20px; }
+  .news__block:nth-child(3n) {
+    margin-right: 0; }
+  .news__block:after {
+    content: '';
+    background: url(../img/news-hover.png) 0 0 no-repeat;
+    width: 328px;
+    height: 328px;
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    display: none;
+    z-index: 1; }
+  .news__block:hover {
+    background: #fff; }
+    .news__block:hover::after {
+      display: block; }
+
+.news__date {
+  font-family: "FedraSansPro-BookItalic";
+  font-size: 14px;
+  line-height: 17px;
+  color: #757575;
+  margin-bottom: 20px; }
+
+.news__title {
+  font-family: "FedraSerifBPro-Medium";
+  font-size: 20px;
+  line-height: 24px;
+  color: #ae915f;
+  margin-bottom: 12px; }
+
+.news__text {
+  font-size: 14px;
+  line-height: 20px; }
+
+.news__img {
+  display: block; }
+
+.news__link {
+  font-family: "FedraSansPro-BookItalic";
+  font-size: 12px;
+  line-height: 15px;
+  color: #ae915f;
+  position: absolute;
+  bottom: 17px;
+  text-decoration: underline; }
+  .news__link:hover {
+    text-decoration: none; }
+  .news__link:before {
+    content: '';
+    width: 22px;
+    height: 26px;
+    background: url(../img/grapes.png) 0 0 no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px; }
+
+.news__pages {
+  text-align: center;
+  margin: 15px 0 45px; }
+
+.news__page {
+  margin: 0 10px;
+  font-family: "FedraSansPro-BookItalic";
+  font-size: 18px;
+  line-height: 21px;
+  color: #ae915f;
+  border-bottom: 2px solid transparent; }
+  .news__page:hover {
+    color: #000;
+    border-bottom: 2px solid #000; }
+
+.news__prev, .news__next {
+  width: 10px;
+  height: 17px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px; }
+  .news__prev:hover, .news__next:hover {
+    background-position: 0 -17px; }
+
+.news__next {
+  background: url(../img/next.jpg) 0 0 no-repeat; }
+
+.news__prev {
+  background: url(../img/prev.jpg) 0 0 no-repeat; }
 
 .shop {
   margin-bottom: 30px; }
@@ -940,7 +1050,8 @@ body {
   padding-bottom: 50px; }
   .contacts__title {
     font-family: "FedraSerifBPro-Medium";
-    font-size: 16px;
+    font-size: 12px;
+    text-transform: uppercase;
     line-height: 24px;
     color: #ae915f;
     border-top: 1px solid #ae915f; }
