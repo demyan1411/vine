@@ -837,8 +837,7 @@ body {
   margin-bottom: 5px; }
   .products-list .bx-wrapper .bx-viewport {
     border: none;
-    box-shadow: none;
-    height: 379px !important; }
+    box-shadow: none; }
   .products-list .bx-wrapper .bx-prev,
   .products-list .bx-wrapper .bx-next {
     top: auto;
@@ -958,6 +957,7 @@ body {
   color: #ae915f;
   position: absolute;
   bottom: 17px;
+  z-index: 2;
   text-decoration: underline; }
   .news__link:hover {
     text-decoration: none; }
