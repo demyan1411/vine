@@ -1130,3 +1130,114 @@ body {
   color: #fff;
   padding: 10px 0;
   border-radius: 5px; }
+
+.contacts {
+  padding-bottom: 50px; }
+  .contacts__title {
+    font-family: "FedraSerifBPro-Medium";
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 24px;
+    color: #ae915f;
+    border-top: 1px solid #ae915f; }
+  .contacts__column {
+    display: inline-block;
+    vertical-align: top;
+    width: 240px;
+    margin-right: 125px; }
+    .contacts__column:last-child {
+      margin-right: 0; }
+  .contacts__name {
+    margin-top: 44px;
+    font-family: "FedraSerifBPro-Medium";
+    font-size: 20px;
+    line-height: 23px;
+    color: #ae915f; }
+    .contacts__name:after {
+      content: '';
+      width: 45px;
+      height: 2px;
+      background: #ae915f;
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 23px; }
+  .contacts__block {
+    margin-bottom: 30px; }
+  .contacts__position {
+    font-family: "FedraSansPro-BookItalic";
+    font-size: 16px;
+    line-height: 19px;
+    color: #ae915f;
+    margin-bottom: 5px; }
+  .contacts__phone {
+    font-family: "FedraSansPro-Medium"; }
+    .contacts__phone--span {
+      font-family: "FedraSansPro-Book"; }
+
+.site-map {
+  text-align: center; }
+  .site-map .wrapper {
+    border-top: 1px solid #ae915f; }
+  .site-map__title {
+    font-family: "FedraSerifBPro-Medium";
+    font-size: 30px;
+    line-height: 33px;
+    color: #ae915f;
+    padding-top: 30px;
+    padding-bottom: 25px; }
+  .site-map__block {
+    width: 310px;
+    margin: 0 auto 42px; }
+    .site-map__block:last-child {
+      margin-bottom: 200px; }
+    .site-map__block-big {
+      width: 100%; }
+  .site-map__name {
+    font-family: "FedraSansPro-BookItalic";
+    font-size: 18px;
+    line-height: 21px;
+    color: #ae915f;
+    margin-bottom: 12px;
+    display: block;
+    text-decoration: underline; }
+    .site-map__name:hover {
+      text-decoration: none; }
+  .site-map__text {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 10px; }
+  .site-map__more {
+    font-family: "FedraSansPro-BookItalic";
+    font-size: 12px;
+    line-height: 18px;
+    color: #ae915f;
+    text-decoration: underline; }
+    .site-map__more:hover {
+      text-decoration: none; }
+  .site-map__link {
+    font-family: "FedraSansPro-BookItalic";
+    font-size: 12px;
+    line-height: 18px;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: underline; }
+    .site-map__link:hover {
+      text-decoration: none; }
+    .site-map__link-bold {
+      font-size: 12px;
+      line-height: 18px;
+      display: block;
+      margin-bottom: 15px;
+      font-weight: bold;
+      text-decoration: underline; }
+      .site-map__link-bold:hover {
+        text-decoration: none; }
+  .site-map__column {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 112px; }
+    .site-map__column:first-of-type {
+      margin-right: 178px;
+      margin-left: 70px; }
+    .site-map__column:last-child {
+      margin-right: 0; }

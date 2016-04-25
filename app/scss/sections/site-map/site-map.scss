@@ -1,0 +1,79 @@
+.site-map {
+  text-align: center;
+
+  .wrapper {
+    border-top: 1px solid $yellowColor;
+  }
+  &__title {
+    font-family: $fserm;
+    font-size: 30px;
+    line-height: 33px;
+    color: $yellowColor;
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+  &__block {
+    width: 310px;
+    margin: 0 auto 42px;
+
+    &:last-child {
+      margin-bottom: 200px;
+    }
+
+    &-big {
+      width: 100%;
+    }
+  }
+  &__name {
+    font-family: $fsbki;
+    font-size: 18px;
+    line-height: 21px;
+    color: $yellowColor;
+    margin-bottom: 12px;
+    display: block;
+    @include htd;
+  }
+  &__text {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+  &__more {
+    font-family: $fsbki;
+    font-size: 12px;
+    line-height: 18px;
+    color: $yellowColor;
+    @include htd;
+  }
+  &__link {
+    font-family: $fsbki;
+    font-size: 12px;
+    line-height: 18px;
+    display: block;
+    margin-bottom: 10px;
+    @include htd;
+
+    &-bold {
+      font-size: 12px;
+      line-height: 18px;
+      display: block;
+      margin-bottom: 15px;
+      font-weight: bold;
+      @include htd;
+    }
+  }
+  &__column {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 112px;
+
+    &:first-of-type {
+      margin-right:178px;
+      margin-left: 70px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
