@@ -1,0 +1,253 @@
+.post {
+  text-align: center;
+
+  .wrapper {
+    border-top: 1px solid $yellowColor;
+    padding: 18px 0;
+  }
+  &__back {
+    font-size: 14px;
+    line-height: 17px;
+    font-family: $fsbki;
+    color: $yellowColor;
+    @include htd;
+  }
+  &__columns {
+    margin-top: 35px;
+    @include clearfix;
+  }
+  &__column {
+    float: left;
+    text-align: left;
+    margin-bottom: 15px;
+
+    &:first-of-type {
+      width: 320px;
+      margin-right: 35px;
+    }
+    &:last-child {
+      width: 550px;
+    }
+  }
+  &__block {
+    text-align: center;
+  }
+  &__img {
+    width: 320px;
+    height: 240px;
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  &__caption {
+    font-size: 14px;
+    line-height: 18px;
+    color: #757575;
+    font-family: $fsbki;
+    padding: 0 22px;
+    margin-bottom: 40px;
+  }
+  &__title {
+    font-size: 30px;
+    line-height: 33px;
+    color: $yellowColor;
+    font-family: $fserm;
+
+    &:after {
+      content: '';
+      width: 80px;
+      height: 3px;
+      background: $yellowColor;
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 22px;
+    }
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 35px;
+    }
+  }
+  &__bold {
+    font-family: $fsm;
+  }
+  &__link {
+    color: $yellowColor;
+    font-family: $fsbki;
+    @include htd;
+
+    &:visited {
+      color: #7d756e;
+    }
+  }
+  &__share {
+    &-text {
+      font-size: 12px;
+      line-height: 18px;
+      color: #757575;
+      margin-bottom: 9px;
+    }
+    &-links {
+      width: 580px;
+    }
+    &-link {
+      font-size: 14px;
+      line-height: 17px;
+      margin-left: 15px;
+
+      &:before {
+        content: '';
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 3px;
+      }
+
+      @include htd;
+
+      &:first-of-type {
+        margin-left: 8px;
+      }
+
+      &.vk {
+        color: #526e8f;
+
+        &:before {
+          background: url(../img/vk.jpg) 0 0 no-repeat;
+        }
+      }
+      &.fb {
+        color: #425497;
+
+        &:before {
+          background: url(../img/fb.jpg) 0 0 no-repeat;
+        }
+      }
+      &.od {
+        color: #e27e35;
+
+        &:before {
+          background: url(../img/od.jpg) 0 0 no-repeat;
+        }
+      }
+      &.go {
+        color: #dd4241;
+
+        &:before {
+          background: url(../img/go.jpg) 0 0 no-repeat;
+          width: 17px;
+        }
+      }
+      &.tw {
+        color: #40c9f1;
+
+        &:before {
+          background: url(../img/tw.jpg) 0 0 no-repeat;
+          width: 17px;
+          height: 13px;
+        }
+      }
+    }
+  }
+  &__shared {
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
+  }
+  &__popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear .5s;
+
+    &.js-active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    opacity: .9;
+    background: #fff;
+
+  }
+  &__slider-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #f5f5f5;
+    background: #fff;
+    width: 646px;
+    height: 456px;
+    z-index: 120;
+  }
+  &__close {
+    position: absolute;
+    width: 17px;
+    height: 18px;
+    top: 28px;
+    right: 31px;
+    background: url(../img/popup-close.png) 0 0 no-repeat;
+    cursor: pointer;
+    z-index: 1;
+  }
+  &__slider {
+    width: 100%;
+    height: 100%;
+    padding: 65px 73px;
+
+    .js-post-slide {
+      width: 500px;
+      height: 331px;
+    }
+    .slick-next {
+      right: 32px;
+    }
+    .slick-prev {
+      left: 32px;
+    }
+    .slick-dots {
+      bottom: 22px;
+      width: 500px;
+
+      li {
+        width: 9px;
+        height: 9px;
+        border: 1px solid #b4b4b4;
+        border-radius: 10px;
+        margin: 0 4px;
+
+        &.slick-active,
+        &:hover {
+          border: 1px solid $yellowColor;
+          background: $yellowColor;
+        }
+
+        button {
+          width: 100%;
+          height: 100%;
+
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

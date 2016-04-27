@@ -1,0 +1,12 @@
+extends ../layouts/main_layout.jade
+
+block content
+  include ../common/post/post.jade
+  include ../common/post/news.jade
+
+block popup
+  .post__popup.js-popup      
+    .post__overlay.js-post-overlay
+    .post__slider-block
+      .post__close.js-close-popup
+      .post__slider.js-post-slider

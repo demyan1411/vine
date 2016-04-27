@@ -31,5 +31,10 @@ $(document).ready(function() {
 
   if($('#map').length) {
     ymaps.ready(initMap);
-  }
+  };
+
+  if($('.js-popup ').length) {
+    new PostSlider();
+  };
+
 });
