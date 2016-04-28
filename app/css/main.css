@@ -195,14 +195,16 @@ body {
     line-height: 21px;
     text-transform: uppercase; }
 
-.search::after {
-  content: '';
+.search__loupe {
   background: url(../img/search.png) 0 0 no-repeat;
   width: 20px;
   height: 20px;
   display: inline-block;
   vertical-align: middle;
-  margin-left: 5px; }
+  margin-left: 5px;
+  cursor: pointer;
+  outline: 0;
+  border: none; }
 
 .search__input {
   width: 205px;
@@ -562,25 +564,16 @@ body {
       position: absolute;
       top: 40px;
       left: 50%;
-      transform: translateX(-50%); }
-      .products__block .products__img1 {
-        background: url(../img/products1.png) 0 0 no-repeat; }
-      .products__block .products__img2 {
-        background: url(../img/products2.png) 0 0 no-repeat; }
-      .products__block .products__img3 {
-        background: url(../img/products3.png) 0 0 no-repeat; }
-    .products__block:hover:after {
-      display: block; }
-    .products__block:hover .products__img {
-      width: 170px;
-      height: 170px;
-      top: 27px; }
-      .products__block:hover .products__img1 {
-        background: url(../img/products1-hover.png) 0 0 no-repeat; }
-      .products__block:hover .products__img2 {
-        background: url(../img/products2-hover.png) 0 0 no-repeat; }
-      .products__block:hover .products__img3 {
-        background: url(../img/products3-hover.png) 0 0 no-repeat; }
+      transform: translateX(-50%);
+      z-index: 1; }
+      .products__block .products__img--hover {
+        opacity: 0;
+        width: 170px;
+        height: 170px;
+        top: 27px; }
+    .products__block:hover .products__img--hover {
+      opacity: 1;
+      z-index: 2; }
   .products__img {
     width: 140px;
     height: 140px; }
@@ -634,29 +627,31 @@ body {
       margin: 0 14px; }
       .products-nav__first-menu--link.active, .products-nav__first-menu--link:hover {
         color: #000; }
-  .products-nav__view-menu--link {
-    font-family: "FedraSansPro-BookItalic";
-    color: #ae915f;
-    margin: 0 9px; }
-    .products-nav__view-menu--link:before {
-      content: '';
-      background: url(../img/products-view-menu.png) 0 0 no-repeat;
-      display: inline-block;
-      vertical-align: middle;
-      width: 11px;
-      height: 11px;
-      margin-right: 5px; }
-    .products-nav__view-menu--link:last-child:before {
-      background-position: -12px 0; }
-    .products-nav__view-menu--link.active:before {
-      background-position: 0 -12px; }
-    .products-nav__view-menu--link:last-child.active:before {
-      background-position: -12px -12px; }
-    .products-nav__view-menu--link.active .products-nav__span,
-    .products-nav__view-menu--link:hover .products-nav__span {
-      border-bottom: 1px dashed transparent; }
-    .products-nav__view-menu--link.active .products-nav__span {
-      color: #999; }
+  .products-nav__view-menu {
+    margin-bottom: 15px; }
+    .products-nav__view-menu--link {
+      font-family: "FedraSansPro-BookItalic";
+      color: #ae915f;
+      margin: 0 9px; }
+      .products-nav__view-menu--link:before {
+        content: '';
+        background: url(../img/products-view-menu.png) 0 0 no-repeat;
+        display: inline-block;
+        vertical-align: middle;
+        width: 11px;
+        height: 11px;
+        margin-right: 5px; }
+      .products-nav__view-menu--link:last-child:before {
+        background-position: -12px 0; }
+      .products-nav__view-menu--link.active:before {
+        background-position: 0 -12px; }
+      .products-nav__view-menu--link:last-child.active:before {
+        background-position: -12px -12px; }
+      .products-nav__view-menu--link.active .products-nav__span,
+      .products-nav__view-menu--link:hover .products-nav__span {
+        border-bottom: 1px dashed transparent; }
+      .products-nav__view-menu--link.active .products-nav__span {
+        color: #999; }
   .products-nav__span {
     border-bottom: 1px dashed #ae915f; }
 
@@ -747,7 +742,8 @@ body {
   border-bottom: 1px solid #ae915f;
   padding-bottom: 30px;
   position: relative;
-  padding-top: 30px; }
+  padding-top: 30px;
+  min-height: 600px; }
   .products-list__block:before, .products-list__block:after {
     content: " ";
     display: table; }
@@ -756,10 +752,18 @@ body {
   .products-list__block:last-child {
     border-bottom: none;
     margin-bottom: 25px; }
+  .products-list__block--not-slider {
+    min-height: 500px; }
 
 .products-list__left {
   float: left;
   width: 350px; }
+
+.products-list__center {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%); }
 
 .products-list__title {
   font-size: 36px;
@@ -1303,21 +1307,22 @@ body {
       margin-bottom: 22px; }
   .post__text {
     font-size: 14px;
-    line-height: 18px;
-    margin-top: 0;
-    margin-bottom: 20px; }
-    .post__text:last-of-type {
-      margin-bottom: 35px; }
-  .post__bold {
-    font-family: "FedraSansPro-Medium"; }
-  .post__link {
-    color: #ae915f;
-    font-family: "FedraSansPro-BookItalic";
-    text-decoration: underline; }
-    .post__link:hover {
-      text-decoration: none; }
-    .post__link:visited {
-      color: #7d756e; }
+    line-height: 18px; }
+    .post__text p {
+      margin-top: 0;
+      margin-bottom: 20px; }
+      .post__text p:last-of-type {
+        margin-bottom: 35px; }
+    .post__text strong {
+      font-family: "FedraSansPro-Medium"; }
+    .post__text a {
+      color: #ae915f;
+      font-family: "FedraSansPro-BookItalic";
+      text-decoration: underline; }
+      .post__text a:hover {
+        text-decoration: none; }
+      .post__text a:visited {
+        color: #7d756e; }
   .post__share-text {
     font-size: 12px;
     line-height: 18px;
@@ -1511,3 +1516,182 @@ body {
     text-decoration: underline; }
     .post-news__all-news:hover {
       text-decoration: none; }
+
+.distribution-map {
+  text-align: center;
+  border-top: 1px solid #ae915f;
+  padding-top: 33px; }
+  .distribution-map__title {
+    font-family: "FedraSerifBPro-Medium";
+    font-size: 30px;
+    line-height: 33px;
+    color: #ae915f; }
+
+.galleries .wrapper {
+  border-top: 1px solid #ae915f;
+  padding-top: 40px;
+  padding-bottom: 50px; }
+
+.galleries__clearfix:before, .galleries__clearfix:after {
+  content: " ";
+  display: table; }
+
+.galleries__clearfix:after {
+  clear: both; }
+
+.galleries__gallery {
+  float: left;
+  width: 317px;
+  text-align: center;
+  margin-right: 19px;
+  margin-bottom: 30px; }
+  .galleries__gallery:last-child {
+    margin-right: 0; }
+
+.galleries__block {
+  width: 100%;
+  height: 316px;
+  border: 1px solid #e4e1df;
+  padding-top: 8px;
+  display: block;
+  margin-bottom: 25px; }
+  .galleries__block:hover {
+    background: url(../img/galleries/gal-hover.png) 0 0 no-repeat; }
+    .galleries__block:hover .galleries__img {
+      border: 4px solid #ae915f; }
+
+.galleries__img {
+  width: 299px;
+  height: 256px;
+  display: block;
+  margin-left: 9px;
+  margin-bottom: 13px;
+  border: 4px solid transparent; }
+
+.galleries__number {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ae915f;
+  font-family: "FedraSansPro-BookItalic";
+  display: inline-block;
+  text-decoration: underline; }
+  .galleries__number:hover {
+    text-decoration: none; }
+
+.galleries__name {
+  font-size: 20px;
+  line-height: 23px;
+  color: #ae915f;
+  font-family: "FedraSerifBPro-Medium";
+  margin-bottom: 13px;
+  padding: 0 25px; }
+
+.galleries__date {
+  font-size: 14px;
+  color: #757575; }
+
+.search-page .wrapper {
+  border-top: 1px solid #ae915f;
+  padding-top: 25px; }
+
+.search-page__search {
+  position: relative; }
+
+.search-page__input {
+  width: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000;
+  padding: 8px 12px;
+  border: 1px solid #ae915f;
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin-bottom: 8px; }
+
+.search-page__submit {
+  width: 16px;
+  height: 16px;
+  background: url(../img/search-page-submit.jpg) 0 0 no-repeat;
+  position: absolute;
+  top: 9px;
+  right: 15px;
+  z-index: 2;
+  outline: 0;
+  border: none;
+  cursor: pointer; }
+
+.search-page__number {
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 14px;
+  margin-bottom: 6px; }
+
+.search-page__sort {
+  font-size: 14px;
+  line-height: 18px;
+  color: #757575;
+  font-family: "FedraSansPro-BookItalic";
+  padding-left: 14px; }
+  .search-page__sort--link {
+    color: #ae915f;
+    text-decoration: underline; }
+    .search-page__sort--link:hover {
+      text-decoration: none; }
+
+.search-page__result {
+  margin-bottom: 44px; }
+  .search-page__result:first-child {
+    margin-top: 15px; }
+  .search-page__result:last-child {
+    margin-bottom: 100px; }
+
+.search-page__name {
+  font-family: "FedraSerifBPro-Medium";
+  font-size: 14px;
+  line-height: 17px;
+  color: #ae915f;
+  margin-bottom: 5px; }
+  .search-page__name:hover {
+    text-decoration: underline; }
+
+.search-page__change {
+  font-size: 12px;
+  line-height: 15px;
+  color: #757575;
+  margin-bottom: 9px; }
+
+.search-page__text {
+  font-size: 14px;
+  line-height: 18px;
+  max-width: 600px; }
+
+.search-page__pages {
+  text-align: center;
+  margin: 15px 0 45px; }
+
+.search-page__page {
+  margin: 0 10px;
+  font-family: "FedraSansPro-BookItalic";
+  font-size: 18px;
+  line-height: 21px;
+  color: #ae915f;
+  border-bottom: 2px solid transparent; }
+  .search-page__page:hover {
+    color: #000;
+    border-bottom: 2px solid #000; }
+
+.search-page__prev, .search-page__next {
+  width: 10px;
+  height: 17px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px; }
+  .search-page__prev:hover, .search-page__next:hover {
+    background-position: 0 -17px; }
+
+.search-page__next {
+  background: url(../img/next.jpg) 0 0 no-repeat; }
+
+.search-page__prev {
+  background: url(../img/prev.jpg) 0 0 no-repeat; }

@@ -26,13 +26,15 @@
 	}
 }
 .search {
-	&::after {
-		content: '';
+	&__loupe {
 		background: url(../img/search.png) 0 0 no-repeat;
 		width: 20px;
 		height: 20px;
 		@include middle;
 		margin-left: 5px;
+		cursor: pointer;
+		outline: 0;
+		border: none;
 	}
 
 	&__input {

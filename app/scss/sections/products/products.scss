@@ -1,6 +1,6 @@
 .products {
   margin-bottom: 30px;
-  
+
   &__block {
     width: 320px;
     height: 640px;
@@ -36,36 +36,21 @@
       top: 40px;
       left: 50%;
       transform: translateX(-50%);
+      z-index: 1;
 
-      &1 {
-        background: url(../img/products1.png) 0 0 no-repeat;
-      }
-      &2 {
-        background: url(../img/products2.png) 0 0 no-repeat;
-      }
-      &3 {
-        background: url(../img/products3.png) 0 0 no-repeat;
+      &--hover {
+        opacity: 0;
+        width: 170px;
+        height: 170px;
+        top: 27px;
       }
     }
 
     &:hover {
-      &:after {
-        display: block;
-      }
-
       .products__img {
-        width: 170px;
-        height: 170px;
-        top: 27px;
-
-        &1 {
-          background: url(../img/products1-hover.png) 0 0 no-repeat;
-        }
-        &2 {
-          background: url(../img/products2-hover.png) 0 0 no-repeat;
-        }
-        &3 {
-          background: url(../img/products3-hover.png) 0 0 no-repeat;
+        &--hover {
+          opacity: 1;
+          z-index: 2;
         }
       }
     }

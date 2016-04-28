@@ -1,0 +1,66 @@
+.galleries {
+  .wrapper {
+    border-top: 1px solid $yellowColor;
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  &__clearfix {
+    @include clearfix;
+  }
+  &__gallery {
+    float: left;
+    width: 317px;
+    text-align: center;
+    margin-right: 19px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__block {
+    width: 100%;
+    height: 316px;
+    border: 1px solid #e4e1df;
+    padding-top: 8px;
+    display: block;
+    margin-bottom: 25px;
+
+    &:hover {
+      background: url(../img/galleries/gal-hover.png) 0 0 no-repeat;
+
+      .galleries__img {
+        border: 4px solid #ae915f;
+      }
+    }
+  }
+  &__img {
+    width: 299px;
+    height: 256px;
+    display: block;
+    margin-left: 9px;
+    margin-bottom: 13px;
+    border: 4px solid transparent;
+  }
+  &__number {
+    font-size: 14px;
+    line-height: 18px;
+    color: $yellowColor;
+    font-family: $fsbki;
+    display: inline-block;
+    @include htd;
+  }
+  &__name {
+    font-size: 20px;
+    line-height: 23px;
+    color: $yellowColor;
+    font-family: $fserm;
+    margin-bottom: 13px;
+    padding: 0 25px;
+  }
+  &__date {
+    font-size: 14px;
+    color: #757575;
+  }
+}

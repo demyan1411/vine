@@ -1,0 +1,124 @@
+.search-page {
+  .wrapper {
+    border-top: 1px solid $yellowColor;
+    padding-top: 25px;
+  }
+  &__search {
+    position: relative;
+  }
+  &__input {
+    width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
+    padding: 8px 12px;
+    border: 1px solid $yellowColor;
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin-bottom: 8px;
+  }
+  &__submit {
+    width: 16px;
+    height: 16px;
+    background: url(../img/search-page-submit.jpg) 0 0 no-repeat;
+    position: absolute;
+    top: 9px;
+    right: 15px;
+    z-index: 2;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+  }
+  &__number {
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 14px;
+    margin-bottom: 6px;
+  }
+  &__sort {
+    font-size: 14px;
+    line-height: 18px;
+    color: #757575;
+    font-family: $fsbki;
+    padding-left: 14px;
+
+    &--link {
+      color: $yellowColor;
+      @include htd;
+    }
+  }
+  &__results {
+
+  }
+  &__result {
+    margin-bottom: 44px;
+
+    &:first-child {
+      margin-top: 15px;
+    }
+    &:last-child {
+      margin-bottom: 100px;
+    }
+  }
+  &__name {
+    font-family: $fserm;
+    font-size: 14px;
+    line-height: 17px;
+    color: $yellowColor;
+    margin-bottom: 5px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__change {
+    font-size: 12px;
+    line-height: 15px;
+    color: #757575;
+    margin-bottom: 9px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 600px;
+  }
+
+  &__pages {
+    text-align: center;
+    margin: 15px 0 45px;
+  }
+  &__page {
+    margin: 0 10px;
+    font-family: $fsbki;
+    font-size: 18px;
+    line-height: 21px;
+    color: $yellowColor;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+      // text-decoration: underline;
+      color: #000;
+      border-bottom: 2px solid #000;
+    }
+  }
+
+  &__prev,
+  &__next {
+    width: 10px;
+    height: 17px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+
+    &:hover {
+      background-position: 0 -17px;
+    }
+  }
+  &__next {
+    background: url(../img/next.jpg) 0 0 no-repeat;
+  }
+  &__prev {
+    background: url(../img/prev.jpg) 0 0 no-repeat;
+  }
+}

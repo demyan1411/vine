@@ -26,22 +26,23 @@ section.products-list
         .products-list__description Описание:
         .products-list__right-block
           .products-list__description-text.
-            Для изготовления этого шампанского применяются классические для шампанских вин сорта винограда Шардоне, Пино, Алиготе, Рислинг. Шампанское обладает утонченным вкусовым букетом с нотками зеленого яблока и цветов липы.
+            Для изготовления этого шампанского применяются классические для шампанских вин сорта винограда Шардоне, Пино, Алиготе, Рислинг. Шампанское обладает утонченным вкусовым букетом с нотками зеленого яблока и цветов липы. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis dolor sed eum tempore quam nam, quia aut ex neque consequatur maxime aperiam eveniet aspernatur commodi ad, facilis in quos illo accusamus cum! Incidunt doloribus dicta nisi provident recusandae minus tempora! Laborum repellat dolorem maiores expedita impedit minus temporibus, cumque magni eligendi voluptate eveniet dignissimos in quibusdam animi explicabo? Modi minus assumenda laudantium nemo deleniti repellat, sit ullam. Laboriosam fugiat placeat pariatur officiis rem iure assumenda incidunt hic necessitatibus neque. Nihil impedit repellendus sed! Blanditiis alias porro repudiandae optio. Dolore possimus iusto, cupiditate dicta illo eum laborum, nihil aliquam inventore quis.
         
-      .products-list__slider.js-products-list-slider
-        img.products-list__slide(src="img/bottles/moscow_brut.png", alt="")
-        img.products-list__slide(src="img/bottles/moscow_semisweet.png", alt="")
-      
-      .products-list__variations Вариации
-      
-      .products-list__pager.js-products-list-pager
-        a.products-list__pager-link(href="", data-slide-index="0")
-          img.products-list__pager-img(src="img/bottles/moscow_brut.png", alt="")
-          .products-list__pager-text брют
-          
-        a.products-list__pager-link(href="", data-slide-index="1")
-          img.products-list__pager-img(src="img/bottles/moscow_semisweet.png", alt="")
-          .products-list__pager-text полусладкое
+      .products-list__center
+        .products-list__slider.js-products-list-slider
+          img.products-list__slide(src="img/bottles/moscow_brut.png", alt="")
+          img.products-list__slide(src="img/bottles/moscow_semisweet.png", alt="")
+        
+        .products-list__variations Вариации
+        
+        .products-list__pager.js-products-list-pager
+          a.products-list__pager-link(href="", data-slide-index="0")
+            img.products-list__pager-img(src="img/bottles/moscow_brut.png", alt="")
+            .products-list__pager-text брют
+            
+          a.products-list__pager-link(href="", data-slide-index="1")
+            img.products-list__pager-img(src="img/bottles/moscow_semisweet.png", alt="")
+            .products-list__pager-text полусладкое
 
     .products-list__block
       .products-list__left
@@ -73,23 +74,24 @@ section.products-list
           
           .products-list__description-text.
             Гармоничное сочетание таких сортов винограда как Шардоне, Алиготе, Рислинг и Пино создает это великолепное шампанское. Для достижения утонченного вкуса напиток выдерживается 6 месяцев.
+      
+      .products-list__center
+        .products-list__slider.js-products-list-slider
+          img.products-list__slide(src="img/bottles/moscowelite_brut.png", alt="")
+          img.products-list__slide(src="img/bottles/moscowelite_semisweet.png", alt="")
         
-      .products-list__slider.js-products-list-slider
-        img.products-list__slide(src="img/bottles/moscowelite_brut.png", alt="")
-        img.products-list__slide(src="img/bottles/moscowelite_semisweet.png", alt="")
-      
-      .products-list__variations Вариации
-      
-      .products-list__pager.js-products-list-pager
-        a.products-list__pager-link(href="", data-slide-index="0")
-          img.products-list__pager-img(src="img/bottles/moscowelite_brut.png", alt="")
-          .products-list__pager-text брют
-          
-        a.products-list__pager-link(href="", data-slide-index="1")
-          img.products-list__pager-img(src="img/bottles/moscowelite_semisweet.png", alt="")
-          .products-list__pager-text полусладкое
+        .products-list__variations Вариации
+        
+        .products-list__pager.js-products-list-pager
+          a.products-list__pager-link(href="", data-slide-index="0")
+            img.products-list__pager-img(src="img/bottles/moscowelite_brut.png", alt="")
+            .products-list__pager-text брют
+            
+          a.products-list__pager-link(href="", data-slide-index="1")
+            img.products-list__pager-img(src="img/bottles/moscowelite_semisweet.png", alt="")
+            .products-list__pager-text полусладкое
 
-    .products-list__block
+    .products-list__block.products-list__block--not-slider
       .products-list__left
         .products-list__title Московское коллекционное шампанское
         
@@ -120,7 +122,7 @@ section.products-list
       .products-list__slider.products-list__slider--not
         img.products-list__slide(src="img/bottles/moscowcollection.png", alt="")
 
-    .products-list__block
+    .products-list__block.products-list__block--not-slider
       .products-list__left
         .products-list__title Albert D
         
@@ -185,20 +187,21 @@ section.products-list
           .products-list__description-text.
             Шампанское изумляет букетом цветочных оттенков в сочетании с фруктовыми нотками яблока и груши, а также освежающим ароматом и вкусом цитрусов. Игра пузырьков, соломенно-янтарные искорки с глубоким цветом утренней зари и необыкновенная гармония оттенков — все это таится в каждой капле шампанского «Золотой стандарт».
         
-      .products-list__slider.js-products-list-slider
-        img.products-list__slide(src="img/bottles/goldstandart_brut.png", alt="")
-        img.products-list__slide(src="img/bottles/goldstandart_semisweet.png", alt="")
-      
-      .products-list__variations Вариации
-      
-      .products-list__pager.js-products-list-pager
-        a.products-list__pager-link(href="", data-slide-index="0")
-          img.products-list__pager-img(src="img/bottles/goldstandart_brut.png", alt="")
-          .products-list__pager-text брют
-          
-        a.products-list__pager-link(href="", data-slide-index="1")
-          img.products-list__pager-img(src="img/bottles/goldstandart_semisweet.png", alt="")
-          .products-list__pager-text полусладкое
+      .products-list__center
+        .products-list__slider.js-products-list-slider
+          img.products-list__slide(src="img/bottles/goldstandart_brut.png", alt="")
+          img.products-list__slide(src="img/bottles/goldstandart_semisweet.png", alt="")
+        
+        .products-list__variations Вариации
+        
+        .products-list__pager.js-products-list-pager
+          a.products-list__pager-link(href="", data-slide-index="0")
+            img.products-list__pager-img(src="img/bottles/goldstandart_brut.png", alt="")
+            .products-list__pager-text брют
+            
+          a.products-list__pager-link(href="", data-slide-index="1")
+            img.products-list__pager-img(src="img/bottles/goldstandart_semisweet.png", alt="")
+            .products-list__pager-text полусладкое
 
     .products-list__block.products-list__block--four
       .products-list__left
@@ -228,30 +231,31 @@ section.products-list
           .products-list__description-text.
             Традиционная и хорошо знакомая марка, выпускаемая ОАО «МКШВ» уже долгие годы. Производится это шампанское из купажей качественных сортов винограда Алиготе, Совиньон и Шардоне. Метод производства доведен до совершенства, технология производства точно соответствует ГОСТу РФ. Обладает красивой и долгой игрой в бокале. Свежий гармоничный вкус оставит наилучшие впечатления…
         
-      .products-list__slider.js-products-list-slider
-        img.products-list__slide(src="img/bottles/rusian_brut.png", alt="")
-        img.products-list__slide(src="img/bottles/rusian_semidry.png", alt="")
-        img.products-list__slide(src="img/bottles/rusian_semisweet.png", alt="")
-        img.products-list__slide(src="img/bottles/rusian_sweet.png", alt="")
-      
-      .products-list__variations Вариации
-      
-      .products-list__pager.js-products-list-pager
-        a.products-list__pager-link(href="", data-slide-index="0")
-          img.products-list__pager-img(src="img/bottles/rusian_brut.png", alt="")
-          .products-list__pager-text брют
-          
-        a.products-list__pager-link(href="", data-slide-index="1")
-          img.products-list__pager-img(src="img/bottles/rusian_semidry.png", alt="")
-          .products-list__pager-text полусухое
-          
-        a.products-list__pager-link(href="", data-slide-index="2")
-          img.products-list__pager-img(src="img/bottles/rusian_semisweet.png", alt="")
-          .products-list__pager-text полусладкое
-          
-        a.products-list__pager-link(href="", data-slide-index="3")
-          img.products-list__pager-img(src="img/bottles/rusian_sweet.png", alt="")
-          .products-list__pager-text сладкое
+      .products-list__center
+        .products-list__slider.js-products-list-slider
+          img.products-list__slide(src="img/bottles/rusian_brut.png", alt="")
+          img.products-list__slide(src="img/bottles/rusian_semidry.png", alt="")
+          img.products-list__slide(src="img/bottles/rusian_semisweet.png", alt="")
+          img.products-list__slide(src="img/bottles/rusian_sweet.png", alt="")
+        
+        .products-list__variations Вариации
+        
+        .products-list__pager.js-products-list-pager
+          a.products-list__pager-link(href="", data-slide-index="0")
+            img.products-list__pager-img(src="img/bottles/rusian_brut.png", alt="")
+            .products-list__pager-text брют
+            
+          a.products-list__pager-link(href="", data-slide-index="1")
+            img.products-list__pager-img(src="img/bottles/rusian_semidry.png", alt="")
+            .products-list__pager-text полусухое
+            
+          a.products-list__pager-link(href="", data-slide-index="2")
+            img.products-list__pager-img(src="img/bottles/rusian_semisweet.png", alt="")
+            .products-list__pager-text полусладкое
+            
+          a.products-list__pager-link(href="", data-slide-index="3")
+            img.products-list__pager-img(src="img/bottles/rusian_sweet.png", alt="")
+            .products-list__pager-text сладкое
 
     .products-list__block
       .products-list__left
@@ -281,17 +285,18 @@ section.products-list
           .products-list__description-text.
             Пикантный натуральный винный напиток. В аромате напитка преобладают тона вишни и яблока, а особую привлекательность придают ему нотки муската. Напиток имеет нежный соломенный цвет, обладает свежим и мягким вкусом с тонами фруктов. Идеально подходит для теплого вечера в кругу друзей.
         
-      .products-list__slider.js-products-list-slider
-        img.products-list__slide(src="img/bottles/shampDuRoi_brut.png", alt="")
-        img.products-list__slide(src="img/bottles/shampDuRoi_semisweet.png", alt="")
-      
-      .products-list__variations Вариации
-      
-      .products-list__pager.js-products-list-pager
-        a.products-list__pager-link(href="", data-slide-index="0")
-          img.products-list__pager-img(src="img/bottles/shampDuRoi_brut.png", alt="")
-          .products-list__pager-text брют
-          
-        a.products-list__pager-link(href="", data-slide-index="1")
-          img.products-list__pager-img(src="img/bottles/shampDuRoi_semisweet.png", alt="")
-          .products-list__pager-text полусладкое
+      .products-list__center
+        .products-list__slider.js-products-list-slider
+          img.products-list__slide(src="img/bottles/shampDuRoi_brut.png", alt="")
+          img.products-list__slide(src="img/bottles/shampDuRoi_semisweet.png", alt="")
+        
+        .products-list__variations Вариации
+        
+        .products-list__pager.js-products-list-pager
+          a.products-list__pager-link(href="", data-slide-index="0")
+            img.products-list__pager-img(src="img/bottles/shampDuRoi_brut.png", alt="")
+            .products-list__pager-text брют
+            
+          a.products-list__pager-link(href="", data-slide-index="1")
+            img.products-list__pager-img(src="img/bottles/shampDuRoi_semisweet.png", alt="")
+            .products-list__pager-text полусладкое

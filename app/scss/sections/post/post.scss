@@ -66,23 +66,26 @@
   &__text {
     font-size: 14px;
     line-height: 18px;
-    margin-top: 0;
-    margin-bottom: 20px;
 
-    &:last-of-type {
-      margin-bottom: 35px;
+    p {
+      margin-top: 0;
+      margin-bottom: 20px;
+
+      &:last-of-type {
+        margin-bottom: 35px;
+      }
     }
-  }
-  &__bold {
-    font-family: $fsm;
-  }
-  &__link {
-    color: $yellowColor;
-    font-family: $fsbki;
-    @include htd;
+    strong {
+      font-family: $fsm;
+    }
+    a {
+      color: $yellowColor;
+      font-family: $fsbki;
+      @include htd;
 
-    &:visited {
-      color: #7d756e;
+      &:visited {
+        color: #7d756e;
+      }
     }
   }
   &__share {

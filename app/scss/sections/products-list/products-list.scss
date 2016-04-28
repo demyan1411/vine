@@ -5,15 +5,26 @@
     padding-bottom: 30px;
     position: relative;
     padding-top: 30px;
+    min-height: 600px;
 
     &:last-child {
       border-bottom: none;
       margin-bottom: 25px;
     }
+
+    &--not-slider {
+      min-height: 500px;
+    }
   }
   &__left {
     float: left;
     width: 350px;
+  }
+  &__center {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   &__title {
     font-size: 36px;
