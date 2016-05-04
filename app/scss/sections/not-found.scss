@@ -1,0 +1,59 @@
+.not-found {
+  text-align: center;
+
+  .wrapper {
+    border-top: 1px solid $yellowColor;
+    padding-top: 35px;
+  }
+  &__title {
+    font-family: $fserm;
+    font-size: 30px;
+    line-height: 24px;
+    color: $yellowColor;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 12px;
+    line-height: 18px;
+    max-width: 340px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  &__form {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 640px;
+  }
+  &__search {
+    width: 100%;
+    font-size: 12px;
+    line-height: 18px;
+    color: #999;
+    border: 1px solid $yellowColor;
+    padding: 6px 12px;
+    margin-bottom: 43px;
+  }
+  &__submit {
+    border: none;
+    outline: 0;
+    background: url(../img/search-page-submit.jpg) 0 0 no-repeat;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 9px;
+    top: 8px;
+  }
+
+  & + .site-map {
+    .wrapper {
+      border-color: #ebebeb;
+    }
+    .site-map__title {
+      font-size: 20px;
+    }
+    .site-map__block:last-child {
+      margin-bottom: 70px;
+    }
+  }
+}

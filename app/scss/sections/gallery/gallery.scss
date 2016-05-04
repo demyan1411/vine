@@ -1,0 +1,57 @@
+.gallery {
+  .wrapper {
+    border-top: 1px solid $yellowColor;
+    padding-top: 20px;
+    text-align: center;
+  }
+  &__back {
+    font-family: $fsbki;
+    color: $yellowColor;
+    @include htd;
+  }
+  &__title {
+    font-family: $fserm;
+    color: $yellowColor;
+    font-size: 30px;
+    line-height: 33px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  &__main-slider {
+    width: 590px;
+    height: 333px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 40px;
+
+    .slick-next {
+      right: 0;
+    }
+    .slick-prev {
+      left: 0;
+    }
+  }
+  &__main-slide {
+    width: 500px;
+    height: 100%;
+    margin: 0 45px;
+  }
+  &__min-slider {
+    display: inline-block;
+    margin-bottom: 80px;
+    width: 680px;
+    @include clearfix;
+  }
+  &__min-slide {
+    width: 92px;
+    height: 62px;
+    border: 1px solid transparent;
+    margin-right: 5px;
+    float: left;
+
+    &.slick-current {
+      opacity: .7;
+      border: 1px solid $yellowColor;
+    }
+  }
+}

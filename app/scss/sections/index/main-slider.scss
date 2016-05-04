@@ -15,40 +15,32 @@
     @include clearfix;
     color: #fff;
     height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
 
     &--1 {
-      .main-slider__left {
-        background-image: url(../img/main-slider__left--1.jpg);
-      }
-      .main-slider__right {
-        background-image: url(../img/main-slider__right--1.jpg);
-      }
+      background-image: url(../img/main-slider--1.jpg);
     }
     &--2 {
-      .main-slider__left {
-        background-image: url(../img/main-slider__left--2.jpg);
-      }
-      .main-slider__right {
-        background-image: url(../img/main-slider__right--2.jpg);
-      }
+      background-image: url(../img/main-slider--2.jpg);
     }
     &--3 {
-      .main-slider__left {
-        background-image: url(../img/main-slider__left--1.jpg);
-      }
-      .main-slider__right {
-        background-image: url(../img/main-slider__right--1.jpg);
-      }
+      background-image: url(../img/main-slider--1.jpg);
     }
   }
+
+  &__bottle {
+    position: absolute;
+    left: 50%;
+    top: 0;  
+  }
+
   &__left {
     width: 50%;
     height: 418px;
     padding-top: 70px;
     text-align: center;
-    float: left;
-    background: #e4c17f right 0 no-repeat;
-    background-size: cover;
   }
   &__title {
     font-family: $fserm;
@@ -78,13 +70,7 @@
     font-weight: bold;
     @include htd;
   }
-  &__right {
-    width: 50%;
-    height: 418px;
-    float: right;
-    background: #4f1d08 0 0 no-repeat;
-    background-size: cover;
-  }
+
   .slick-prev {
     top: auto;
     bottom: -54px;
@@ -98,7 +84,7 @@
 
   .slick-dots {
     bottom: -47px;
-    
+
     li {
       width: 10px;
       height: 10px;

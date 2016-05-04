@@ -1,14 +1,32 @@
 'use strict';
 $(document).ready(function() {
-  $('form').on('submit', function(e) {
-    return e.preventDefault();
-  });
+
+  $('select').styler()
 
   $('.js-main-slider').slick({
     dots: true,
     arrows: true,
     slidesToShow: 1,
     slidesToScroll: 1
+  });
+
+  $('.js-gallery-main-slider').slick({
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.js-gallery-min-slider'
+  });
+
+  $('.js-gallery-min-slider').slick({
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    asNavFor: '.js-gallery-main-slider',
+    centerMode: true,
+    focusOnSelect: true,
+    variableWidth: true
   });
 
   $('.js-stamps-slider').slick({

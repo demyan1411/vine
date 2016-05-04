@@ -1,0 +1,14 @@
+mixin days
+  - var n = 1
+  while n <= 31
+    option.enter__option= n++
+    
+mixin months
+  - var months = ['января', 'февраля', 'марта', 'апрлеля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря']
+  each month in months
+    option.enter__option= month
+    
+mixin years
+  - var n = 2016
+  while n >= 1916
+    option.enter__option= n--

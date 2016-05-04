@@ -1,0 +1,114 @@
+.about {
+  &__title {
+    font-family: $fserm;
+    font-size: 36px;
+    line-height: 39px;
+    color: $yellowColor;
+    margin-bottom: 35px;
+  }
+  &__block {
+
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+  &__images {
+    @include clearfix;
+    margin-top: 25px;
+
+    .about__img {
+      margin-bottom: 40px;
+    }
+  }
+  &__img {
+    float: left;
+    width: 308px;
+    height: 208px;
+    margin-right: 17px;
+    margin-bottom: 55px;
+    padding: 4px;
+    background: url(../img/about/border.png) 0 0 no-repeat;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__medal {
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin-right: 19px;
+    margin-bottom: 45px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__links {
+    position: relative;
+    top: -25px;
+    margin-bottom: 35px;
+  }
+  &__link {
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 15px;
+
+    &:before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 3px;
+    }
+
+    @include htd;
+
+    &:first-of-type {
+      margin-left: 8px;
+    }
+
+    &.vk {
+      color: #526e8f;
+
+      &:before {
+        background: url(../img/vk.jpg) 0 0 no-repeat;
+      }
+    }
+    &.fb {
+      color: #425497;
+
+      &:before {
+        background: url(../img/fb.jpg) 0 0 no-repeat;
+      }
+    }
+    &.od {
+      color: #e27e35;
+
+      &:before {
+        background: url(../img/od.jpg) 0 0 no-repeat;
+      }
+    }
+    &.go {
+      color: #dd4241;
+
+      &:before {
+        background: url(../img/go.jpg) 0 0 no-repeat;
+        width: 17px;
+      }
+    }
+    &.tw {
+      color: #40c9f1;
+
+      &:before {
+        background: url(../img/tw.jpg) 0 0 no-repeat;
+        width: 17px;
+        height: 13px;
+      }
+    }
+  }
+}

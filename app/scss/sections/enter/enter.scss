@@ -1,0 +1,126 @@
+.enter {
+  background: url(../img/enter.jpg) center top no-repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  &__block {
+    width: 799px;
+    height: 573px;
+    background: rgba(255, 255, 255, .8) url(../img/enter-border.png) 0 0 no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding-top: 62px;
+  }
+  &__logo {
+    display: inline-block;
+    width: 237px;
+    height: 126px;
+    margin-bottom: 30px;
+  }
+  &__text {
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 18px;
+    background: url(../img/18.png) 0 0 no-repeat;
+    text-align: left;
+    width: 650px;
+    display: inline-block;
+    padding-left: 100px;
+    padding-top: 24px;
+    padding-bottom: 53px;
+  }
+  &__form {
+
+  }
+  &__birthdate {
+    margin-bottom: 8px;
+  }
+  &__date {
+
+  }
+  &__select {
+    &--months + .jq-selectbox__select {
+      width: 100px;
+
+      .jq-selectbox__select-text {
+        width: 70px !important;
+      }
+    }
+    &--days + .jq-selectbox__select {
+      width: 56px;
+    }
+  }
+  &__italic {
+    margin: 0 auto;
+    width: 200px;
+    color: #757575;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 33px;
+  }
+  &__button {
+    outline: 0;
+    border: none;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    background: $yellowColor;
+    border-radius: 5px;
+    width: 210px;
+    height: 37px;
+
+    &:hover {
+      background: #796541;
+    }
+  }
+  .jq-selectbox {
+    margin-right: 5px;
+    margin-bottom: 10px;
+
+    &.focused, &.opened {
+      border: none;
+      box-shadow: none;
+    }
+
+    li {
+      text-align: left;
+
+      &:hover {
+        background: $yellowColor;
+      }
+    }
+
+    .jq-selectbox__select {
+      background: #fff;
+      border-radius: 0;
+      border: 1px solid #d6d6d6;
+      box-shadow: none;
+      height: 28px;
+      font-size: 14px;
+      line-height: 25px;
+      color: #000;
+      padding-right: 32px;
+      padding-left: 6px;
+    }
+    .jq-selectbox__dropdown {
+      border-radius: 0;
+      border: 1px solid #d6d6d6;
+      box-shadow: none;
+    }
+    .jq-selectbox__trigger {
+      border: none;
+      width: 25px;
+    }
+    .jq-selectbox__trigger-arrow {
+      border: none;
+      background: url(../img/trigger.jpg) 0 0 no-repeat;
+      width: 8px;
+      height: 4px;
+      top: 11px;
+    }
+  }
+}

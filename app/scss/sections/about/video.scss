@@ -1,0 +1,12 @@
+.about-video {
+  .wrapper {
+    padding-top: 50px;
+    border-top: 1px solid $yellowColor;
+  }
+  &__block {
+    width: 640px;
+    height: 380px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,19 @@
+section.enter
+  .enter__block
+    img.enter__logo(src="img/enter-logo.png", alt="")
+    .enter__text Сайт посвящен алкогольной продукции и предназначен для лиц старше 18 лет, пожалуйста, подтвердите свой возраст, чтобы продолжить просмотр сайта.
+    
+    form.enter__form
+      .enter__birthdate Дата рождения
+      .enter__date
+        select.enter__select.enter__select--days
+          +days
+        
+        select.enter__select.enter__select--months
+          +months
+          
+        select.enter__select.enter__select--years
+          +years
+        
+      .enter__italic *мы не собираем и не храним ваши персональные данные 
+      button.enter__button войти

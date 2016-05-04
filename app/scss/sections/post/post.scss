@@ -35,9 +35,11 @@
   &__img {
     width: 320px;
     height: 240px;
+    padding: 4px;
     display: block;
     margin-bottom: 5px;
     cursor: pointer;
+    background: url(../img/post1/border.png) 0 0 no-repeat;
   }
   &__caption {
     font-size: 14px;
