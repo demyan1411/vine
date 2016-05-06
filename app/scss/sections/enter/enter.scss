@@ -51,7 +51,10 @@
       }
     }
     &--days + .jq-selectbox__select {
-      width: 56px;
+      width: 72px;
+    }
+    &--years + .jq-selectbox__select {
+      width: 70px;
     }
   }
   &__italic {

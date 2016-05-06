@@ -1962,7 +1962,9 @@ body {
     .enter__select--months + .jq-selectbox__select .jq-selectbox__select-text {
       width: 70px !important; }
   .enter__select--days + .jq-selectbox__select {
-    width: 56px; }
+    width: 72px; }
+  .enter__select--years + .jq-selectbox__select {
+    width: 70px; }
   .enter__italic {
     margin: 0 auto;
     width: 200px;
