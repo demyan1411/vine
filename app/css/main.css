@@ -1519,7 +1519,39 @@ body {
     font-family: "FedraSerifBPro-Medium";
     font-size: 30px;
     line-height: 33px;
-    color: #ae915f; }
+    color: #ae915f;
+    margin-bottom: 20px; }
+  .distribution-map__russia {
+    width: 980px;
+    height: 530px;
+    background: url(../img/map/map.jpg) 0 0 no-repeat; }
+
+.people {
+  margin-top: 55px;
+  margin-bottom: 40px; }
+  .people:before, .people:after {
+    content: " ";
+    display: table; }
+  .people:after {
+    clear: both; }
+  .people__column {
+    float: left;
+    width: 185px;
+    margin-right: 140px; }
+    .people__column:first-child {
+      margin-left: 40px; }
+    .people__column:last-child {
+      margin-right: 0; }
+  .people__position {
+    font-size: 16px;
+    line-height: 19px;
+    color: #ae915f;
+    font-family: "FedraSansPro-BookItalic"; }
+  .people__name {
+    color: #232323; }
+  .people__number {
+    font-family: "FedraSansPro-Medium";
+    margin-bottom: 30px; }
 
 .galleries .wrapper {
   border-top: 1px solid #ae915f;
@@ -1753,10 +1785,13 @@ body {
   color: #ae915f;
   margin-bottom: 35px; }
 
-.about__text {
+.about p {
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 15px; }
+
+.about ul {
+  list-style: disc; }
 
 .about__images {
   margin-top: 25px; }
@@ -1765,32 +1800,30 @@ body {
     display: table; }
   .about__images:after {
     clear: both; }
-  .about__images .about__img {
+  .about__images img {
     margin-bottom: 40px; }
 
-.about__img {
+.about img {
   float: left;
   width: 308px;
-  height: 208px;
   margin-right: 17px;
   margin-bottom: 55px;
   padding: 4px;
   background: url(../img/about/border.png) 0 0 no-repeat; }
-  .about__img:last-child {
+  .about img:last-child {
     margin-right: 0; }
 
-.about__medal {
+.about img.about__medal {
   float: left;
   width: 120px;
   height: 120px;
   margin-right: 19px;
-  margin-bottom: 45px; }
-  .about__medal:last-child {
+  margin-bottom: 45px;
+  background: none; }
+  .about img.about__medal:last-child {
     margin-right: 0; }
 
 .about__links {
-  position: relative;
-  top: -25px;
   margin-bottom: 35px; }
 
 .about__link {
@@ -1884,8 +1917,9 @@ body {
   height: 62px;
   border: 1px solid transparent;
   margin-right: 5px;
-  float: left; }
-  .gallery__min-slide.slick-current {
+  float: left;
+  cursor: pointer; }
+  .gallery__min-slide.slick-current, .gallery__min-slide:hover {
     opacity: .7;
     border: 1px solid #ae915f; }
 
@@ -1981,3 +2015,34 @@ body {
       width: 8px;
       height: 4px;
       top: 11px; }
+
+.enter__popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7); }
+  .enter__popup-block {
+    width: 355px;
+    height: 190px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 48px 70px 44px;
+    text-align: center; }
+  .enter__popup-text {
+    margin-bottom: 25px; }
+  .enter__popup-button {
+    width: 100%;
+    border: none;
+    outline: 0;
+    background: #ae915f;
+    color: #fff;
+    line-height: 30px;
+    height: 32px;
+    border-radius: 3px; }
+    .enter__popup-button:hover {
+      background: #7f6a46; }

@@ -48,8 +48,10 @@
     border: 1px solid transparent;
     margin-right: 5px;
     float: left;
+    cursor: pointer;
 
-    &.slick-current {
+    &.slick-current,
+    &:hover {
       opacity: .7;
       border: 1px solid $yellowColor;
     }

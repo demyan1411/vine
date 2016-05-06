@@ -9,23 +9,25 @@
   &__block {
 
   }
-  &__text {
+  p {
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 15px;
+  }
+  ul {
+    list-style: disc;
   }
   &__images {
     @include clearfix;
     margin-top: 25px;
 
-    .about__img {
+    img {
       margin-bottom: 40px;
     }
   }
-  &__img {
+  img {
     float: left;
     width: 308px;
-    height: 208px;
     margin-right: 17px;
     margin-bottom: 55px;
     padding: 4px;
@@ -35,12 +37,13 @@
       margin-right: 0;
     }
   }
-  &__medal {
+  img.about__medal {
     float: left;
     width: 120px;
     height: 120px;
     margin-right: 19px;
     margin-bottom: 45px;
+    background: none;
 
     &:last-child {
       margin-right: 0;
@@ -48,8 +51,6 @@
   }
 
   &__links {
-    position: relative;
-    top: -25px;
     margin-bottom: 35px;
   }
   &__link {

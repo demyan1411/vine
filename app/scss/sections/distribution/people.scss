@@ -1,0 +1,31 @@
+.people {
+  margin-top: 55px;
+  margin-bottom: 40px;
+  @include clearfix;
+
+  &__column {
+    float: left;
+    width: 185px;
+    margin-right: 140px;
+
+    &:first-child {
+      margin-left: 40px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__position {
+    font-size: 16px;
+    line-height: 19px;
+    color: $yellowColor;
+    font-family: $fsbki;
+  }
+  &__name {
+    color: #232323;
+  }
+  &__number {
+    font-family: $fsm;
+    margin-bottom: 30px;
+  }
+}

@@ -12,5 +12,11 @@
     font-size: 30px;
     line-height: 33px;
     color: $yellowColor;
+    margin-bottom: 20px;
+  }
+  &__russia {
+    width: 980px;
+    height: 530px;
+    background: url(../img/map/map.jpg) 0 0 no-repeat;
   }
 }
