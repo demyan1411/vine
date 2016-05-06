@@ -1512,9 +1512,10 @@ body {
       text-decoration: none; }
 
 .distribution-map {
-  text-align: center;
-  border-top: 1px solid #ae915f;
-  padding-top: 33px; }
+  text-align: center; }
+  .distribution-map .wrapper {
+    border-top: 1px solid #ae915f;
+    padding-top: 33px; }
   .distribution-map__title {
     font-family: "FedraSerifBPro-Medium";
     font-size: 30px;
