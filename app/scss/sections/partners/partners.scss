@@ -1,0 +1,55 @@
+.partners {
+  text-align: center;
+  .wrapper {
+    padding-top: 35px;
+    border-top: 1px solid $yellowColor;
+  }
+  &__title {
+    font-family: $fserm;
+    font-size: 30px;
+    line-height: 33px;
+    color: $yellowColor;
+    margin-bottom: 60px;
+  }
+  &__blocks {
+    @include clearfix;
+  }
+  &__block {
+    float: left;
+    margin-right: 77px;
+    width: 258px;
+    margin-bottom: 75px;
+
+    &:first-child {
+      margin-left: 32px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__img {
+    width: 258px;
+    height: 133px;
+    background: url(../img/partners/border.png) 0 0 no-repeat;
+    padding-top: 4px;
+  }
+  &__logo {
+
+  }
+  &__name {
+    margin: 13px 0 8px;
+    font-family: $fserm;
+    font-size: 18px;
+    line-height: 18px;
+    color: $yellowColor;
+    padding: 0 15px;
+  }
+  &__site {
+    font-family: $fsbki;
+    font-size: 14px;
+    line-height: 18px;
+    color: $yellowColor;
+
+    @include htd;
+  }
+}

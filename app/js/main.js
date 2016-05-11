@@ -8,6 +8,16 @@ $(document).ready(function() {
     arrows: true,
     slidesToShow: 1,
     slidesToScroll: 1
+  })
+  .on('afterChange', function(event, slick, currentSlide, nextSlide){
+    if ($(".js-main-slider .slick-active .main-slider__bottle").length){
+        $(".js-main-slider .slick-active .main-slider__bottle").animate({left:'45%'}, 200);
+    }
+  })
+  .on('beforeChange', function(event, slick, currentSlide, nextSlide){
+      if ($(".js-main-slider .slick-active .main-slider__bottle").length){
+          $(".js-main-slider .slick-active .main-slider__bottle").animate({left:'50%'}, 200);
+      }
   });
 
   $('.js-gallery-main-slider').slick({
@@ -38,12 +48,21 @@ $(document).ready(function() {
 
   $('.js-products-list-slider').each(function () {
     var $this = $(this);
-    var $pager = $this.siblings('.js-products-list-pager');
+    var $pager = $this.siblings('.products-list__pager')
+    var $pagerSlider = $pager.find('.js-products-list-pager');
+
+    $pager.prepend('<div class="js-prev"></div>')
+          .append('<div class="js-next"></div>');
+
+    var $next = $pager.find('.js-next');
+    var $prev = $pager.find('.js-prev');
 
     $this.bxSlider({
       mode: 'fade',
       slideWidth: 197,
-      pagerCustom: $pager
+      pagerCustom: $pagerSlider,
+      nextSelector: $next,
+      prevSelector: $prev
   	});
   });
 

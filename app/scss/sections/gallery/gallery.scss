@@ -24,6 +24,10 @@
     overflow: hidden;
     margin-bottom: 40px;
 
+    .slick-slide {
+      min-height: 333px;
+    }
+
     .slick-next {
       right: 0;
     }

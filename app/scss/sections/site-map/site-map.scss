@@ -65,13 +65,13 @@
   &__column {
     display: inline-block;
     vertical-align: top;
-    margin-right: 112px;
+    width: 256px;
+    text-align: center;
+    margin: 0 40px;
 
     &:first-of-type {
-      margin-right:178px;
-      margin-left: 70px;
+      margin-left: 0;
     }
-
     &:last-child {
       margin-right: 0;
     }
