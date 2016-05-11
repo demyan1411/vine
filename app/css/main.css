@@ -2166,7 +2166,8 @@ body {
     background: url(../img/partners/border.png) 0 0 no-repeat;
     padding-top: 4px;
     outline: 0;
-    border: none; }
+    border: none;
+    cursor: default; }
   .partners__name {
     margin: 13px 0 8px;
     font-family: "FedraSerifBPro-Medium";
