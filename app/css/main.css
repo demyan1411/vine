@@ -1869,7 +1869,8 @@ body {
   margin-bottom: 15px; }
 
 .about ul, .about li {
-  list-style: disc; }
+  list-style: disc;
+  margin-left: 10px; }
 
 .about img {
   float: left;
