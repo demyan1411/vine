@@ -11,12 +11,12 @@ $(document).ready(function() {
   })
   .on('afterChange', function(event, slick, currentSlide, nextSlide){
     if ($(".js-main-slider .slick-active .main-slider__bottle").length){
-        $(".js-main-slider .slick-active .main-slider__bottle").animate({left:'45%'}, 200);
+        $(".js-main-slider .slick-active .main-slider__bottle").animate({right:'275px'}, 200);
     }
   })
   .on('beforeChange', function(event, slick, currentSlide, nextSlide){
       if ($(".js-main-slider .slick-active .main-slider__bottle").length){
-          $(".js-main-slider .slick-active .main-slider__bottle").animate({left:'50%'}, 200);
+          $(".js-main-slider .slick-active .main-slider__bottle").animate({right:'207px'}, 200);
       }
   });
 

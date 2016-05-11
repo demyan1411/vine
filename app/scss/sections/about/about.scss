@@ -14,27 +14,29 @@
     line-height: 18px;
     margin-bottom: 15px;
   }
-  ul {
+  ul, li {
     list-style: disc;
   }
-  &__images {
-    @include clearfix;
-    margin-top: 25px;
 
-    img {
-      margin-bottom: 40px;
-    }
-  }
   img {
     float: left;
     width: 308px;
+    height: 208px;
     margin-right: 17px;
     margin-bottom: 55px;
     padding: 4px;
     background: url(../img/about/border.png) 0 0 no-repeat;
+    clear: both;
+  }
 
-    &:last-child {
-      margin-right: 0;
+  &__images {
+    clear: both;
+    @include clearfix;
+    margin-top: 25px;
+
+    img {
+      margin-bottom: 25px;
+      clear: none;
     }
   }
   img.about__medal {

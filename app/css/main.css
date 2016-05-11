@@ -44,7 +44,6 @@ a {
   color: inherit; }
 
 ul, li {
-  list-style: none;
   padding: 0;
   margin: 0; }
 
@@ -395,7 +394,7 @@ body {
       background-image: url(../img/main-slider--1.jpg); }
   .main-slider__bottle {
     position: absolute;
-    left: 50%;
+    right: 207px;
     top: 0; }
   .main-slider__left {
     width: 50%;
@@ -1550,6 +1549,62 @@ body {
     width: 980px;
     height: 530px;
     background: url(../img/map/map.jpg) 0 0 no-repeat; }
+  .distribution-map__block {
+    width: 410px;
+    background: rgba(245, 243, 241, 0.73);
+    text-align: left;
+    position: absolute;
+    left: 485px;
+    top: 205px;
+    border: 1px solid #e8e8e8;
+    padding: 35px 0 40px 35px;
+    display: none; }
+    .distribution-map__block:after {
+      content: '';
+      display: block;
+      width: 46px;
+      height: 41px;
+      position: absolute;
+      right: 30px;
+      bottom: 20px;
+      background: url(../img/map/logo-map.png) 0 0 no-repeat; }
+    .distribution-map__block.active {
+      display: block; }
+  .distribution-map__name {
+    font-size: 16px;
+    line-height: 19px;
+    color: #ae915f;
+    font-family: "FedraSerifBPro-Medium";
+    width: 215px;
+    text-transform: uppercase; }
+    .distribution-map__name:after {
+      content: '';
+      width: 32px;
+      height: 2px;
+      background: #ae915f;
+      display: block;
+      margin-top: 8px;
+      margin-bottom: 18px; }
+  .distribution-map__manager {
+    font-family: "FedraSansPro-Medium";
+    font-size: 14px;
+    line-height: 18px; }
+  .distribution-map__position {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 12px;
+    width: 170px; }
+  .distribution-map__phone {
+    font-size: 14px;
+    line-height: 18px; }
+  .distribution-map__link {
+    font-size: 14px;
+    line-height: 18px;
+    color: #ae915f;
+    font-family: "FedraSansPro-BookItalic";
+    text-decoration: underline; }
+    .distribution-map__link:hover {
+      text-decoration: none; }
 
 .people {
   margin-top: 55px;
@@ -1607,9 +1662,7 @@ body {
   display: block;
   margin-bottom: 25px; }
   .galleries__block:hover {
-    background: url(../img/galleries/gal-hover.png) 0 0 no-repeat; }
-    .galleries__block:hover .galleries__img {
-      border: 4px solid #ae915f; }
+    background: #f8f6f4; }
 
 .galleries__img {
   width: 300px;
@@ -1815,10 +1868,21 @@ body {
   line-height: 18px;
   margin-bottom: 15px; }
 
-.about ul {
+.about ul, .about li {
   list-style: disc; }
 
+.about img {
+  float: left;
+  width: 308px;
+  height: 208px;
+  margin-right: 17px;
+  margin-bottom: 55px;
+  padding: 4px;
+  background: url(../img/about/border.png) 0 0 no-repeat;
+  clear: both; }
+
 .about__images {
+  clear: both;
   margin-top: 25px; }
   .about__images:before, .about__images:after {
     content: " ";
@@ -1826,17 +1890,8 @@ body {
   .about__images:after {
     clear: both; }
   .about__images img {
-    margin-bottom: 40px; }
-
-.about img {
-  float: left;
-  width: 308px;
-  margin-right: 17px;
-  margin-bottom: 55px;
-  padding: 4px;
-  background: url(../img/about/border.png) 0 0 no-repeat; }
-  .about img:last-child {
-    margin-right: 0; }
+    margin-bottom: 25px;
+    clear: none; }
 
 .about img.about__medal {
   float: left;
@@ -2109,7 +2164,9 @@ body {
     width: 258px;
     height: 133px;
     background: url(../img/partners/border.png) 0 0 no-repeat;
-    padding-top: 4px; }
+    padding-top: 4px;
+    outline: 0;
+    border: none; }
   .partners__name {
     margin: 13px 0 8px;
     font-family: "FedraSerifBPro-Medium";
