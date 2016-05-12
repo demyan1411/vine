@@ -7,16 +7,37 @@
     margin-bottom: 35px;
   }
   &__block {
-
+    @include clearfix;
   }
   p {
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 15px;
+
+    a {
+      color: $yellowColor;
+      font-family: $fsbki;
+      @include htd;
+
+      &:visited {
+        color: #7d756e;
+      }
+    }
   }
   ul, li {
-    list-style: disc;
-    margin-left: 10px;
+    list-style: none;
+  }
+
+  li {
+    &:before {
+      content: '';
+      background: url(../img/bulet.png) 0 0 no-repeat;
+      display: inline-block;
+      vertical-align: middle;
+      width: 10px;
+      height: 10px;
+      margin-right: 10px;
+    }
   }
 
   img {
@@ -24,7 +45,7 @@
     width: 308px;
     height: 208px;
     margin-right: 17px;
-    margin-bottom: 55px;
+    margin-bottom: 43px;
     padding: 4px;
     background: url(../img/about/border.png) 0 0 no-repeat;
     clear: both;
@@ -55,21 +76,15 @@
 
   &__links {
     margin-bottom: 35px;
+    clear: both;
+  }
+  &__shared {
+    margin-right: 10px;
   }
   &__link {
     font-size: 14px;
     line-height: 17px;
-    margin-left: 15px;
-
-    &:before {
-      content: '';
-      width: 16px;
-      height: 16px;
-      display: inline-block;
-      vertical-align: middle;
-      margin-right: 3px;
-    }
-
+    margin-right: 20px;
     @include htd;
 
     &:first-of-type {
@@ -78,41 +93,32 @@
 
     &.vk {
       color: #526e8f;
-
-      &:before {
-        background: url(../img/vk.jpg) 0 0 no-repeat;
-      }
     }
     &.fb {
       color: #425497;
-
-      &:before {
-        background: url(../img/fb.jpg) 0 0 no-repeat;
-      }
     }
     &.od {
       color: #e27e35;
-
-      &:before {
-        background: url(../img/od.jpg) 0 0 no-repeat;
-      }
     }
     &.go {
       color: #dd4241;
-
-      &:before {
-        background: url(../img/go.jpg) 0 0 no-repeat;
-        width: 17px;
-      }
     }
     &.tw {
       color: #40c9f1;
+    }
 
-      &:before {
-        background: url(../img/tw.jpg) 0 0 no-repeat;
-        width: 17px;
-        height: 13px;
-      }
+    img {
+      width: auto;
+      height: auto;
+      display: inline-block;
+      vertical-align: middle;
+      background: none;
+      float: none;
+      margin: 0;
+      padding: 0;
+      margin-right: 5px;
+      margin-left: -4px;
+      text-decoration: none;
     }
   }
 }

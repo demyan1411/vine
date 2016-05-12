@@ -8,17 +8,11 @@ $(document).ready(function() {
     arrows: true,
     slidesToShow: 1,
     slidesToScroll: 1
-  })
-  .on('afterChange', function(event, slick, currentSlide, nextSlide){
-    if ($(".js-main-slider .slick-active .main-slider__bottle").length){
-        $(".js-main-slider .slick-active .main-slider__bottle").animate({right:'275px'}, 200);
-    }
-  })
-  .on('beforeChange', function(event, slick, currentSlide, nextSlide){
-      if ($(".js-main-slider .slick-active .main-slider__bottle").length){
-          $(".js-main-slider .slick-active .main-slider__bottle").animate({right:'207px'}, 200);
-      }
   });
+
+  if ($(".js-main-slider").length) {
+    new Bottle();
+  }
 
   $('.js-gallery-main-slider').slick({
     infinite: true,

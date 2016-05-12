@@ -6,14 +6,13 @@ function initMap() {
           searchControlProvider: 'yandex#search'
       }),
       myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-          hintContent: 'Собственный значок метки',
-          balloonContent: 'Это красивая метка'
+          hintContent: 'Фирменный магазин'
       }, {
           // Опции.
           // Необходимо указать данный тип макета.
           iconLayout: 'default#image',
           // Своё изображение иконки метки.
-          iconImageHref: 'img/icon.png',
+          iconImageHref: '/img/icon.png',
           // Размеры метки.
           iconImageSize: [40, 54],
           // Смещение левого верхнего угла иконки относительно

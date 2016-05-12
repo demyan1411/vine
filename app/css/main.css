@@ -468,7 +468,9 @@ body {
     .main-slider .slick-prev {
       left: 18px; }
     .main-slider .slick-next {
-      right: 18px; } }
+      right: 18px; }
+    .main-slider__bottle {
+      right: 82px; } }
 
 .index-news .wrapper {
   border-top: 1px solid #ae915f;
@@ -1863,21 +1865,44 @@ body {
   color: #ae915f;
   margin-bottom: 35px; }
 
+.about__block:before, .about__block:after {
+  content: " ";
+  display: table; }
+
+.about__block:after {
+  clear: both; }
+
 .about p {
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 15px; }
+  .about p a {
+    color: #ae915f;
+    font-family: "FedraSansPro-BookItalic";
+    text-decoration: underline; }
+    .about p a:hover {
+      text-decoration: none; }
+    .about p a:visited {
+      color: #7d756e; }
 
 .about ul, .about li {
-  list-style: disc;
-  margin-left: 10px; }
+  list-style: none; }
+
+.about li:before {
+  content: '';
+  background: url(../img/bulet.png) 0 0 no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px; }
 
 .about img {
   float: left;
   width: 308px;
   height: 208px;
   margin-right: 17px;
-  margin-bottom: 55px;
+  margin-bottom: 43px;
   padding: 4px;
   background: url(../img/about/border.png) 0 0 no-repeat;
   clear: both; }
@@ -1905,47 +1930,43 @@ body {
     margin-right: 0; }
 
 .about__links {
-  margin-bottom: 35px; }
+  margin-bottom: 35px;
+  clear: both; }
+
+.about__shared {
+  margin-right: 10px; }
 
 .about__link {
   font-size: 14px;
   line-height: 17px;
-  margin-left: 15px;
+  margin-right: 20px;
   text-decoration: underline; }
-  .about__link:before {
-    content: '';
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 3px; }
   .about__link:hover {
     text-decoration: none; }
   .about__link:first-of-type {
     margin-left: 8px; }
   .about__link.vk {
     color: #526e8f; }
-    .about__link.vk:before {
-      background: url(../img/vk.jpg) 0 0 no-repeat; }
   .about__link.fb {
     color: #425497; }
-    .about__link.fb:before {
-      background: url(../img/fb.jpg) 0 0 no-repeat; }
   .about__link.od {
     color: #e27e35; }
-    .about__link.od:before {
-      background: url(../img/od.jpg) 0 0 no-repeat; }
   .about__link.go {
     color: #dd4241; }
-    .about__link.go:before {
-      background: url(../img/go.jpg) 0 0 no-repeat;
-      width: 17px; }
   .about__link.tw {
     color: #40c9f1; }
-    .about__link.tw:before {
-      background: url(../img/tw.jpg) 0 0 no-repeat;
-      width: 17px;
-      height: 13px; }
+  .about__link img {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    background: none;
+    float: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 5px;
+    margin-left: -4px;
+    text-decoration: none; }
 
 .gallery .wrapper {
   border-top: 1px solid #ae915f;
