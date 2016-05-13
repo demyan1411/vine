@@ -98,22 +98,12 @@
       margin-bottom: 9px;
     }
     &-links {
-      width: 580px;
+      width: 590px;
     }
     &-link {
       font-size: 14px;
       line-height: 17px;
       margin-left: 15px;
-
-      &:before {
-        content: '';
-        width: 16px;
-        height: 16px;
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 3px;
-      }
-
       @include htd;
 
       &:first-of-type {
@@ -122,41 +112,24 @@
 
       &.vk {
         color: #526e8f;
-
-        &:before {
-          background: url(../img/vk.jpg) 0 0 no-repeat;
-        }
       }
       &.fb {
         color: #425497;
-
-        &:before {
-          background: url(../img/fb.jpg) 0 0 no-repeat;
-        }
       }
       &.od {
         color: #e27e35;
-
-        &:before {
-          background: url(../img/od.jpg) 0 0 no-repeat;
-        }
       }
       &.go {
         color: #dd4241;
-
-        &:before {
-          background: url(../img/go.jpg) 0 0 no-repeat;
-          width: 17px;
-        }
       }
       &.tw {
         color: #40c9f1;
+      }
 
-        &:before {
-          background: url(../img/tw.jpg) 0 0 no-repeat;
-          width: 17px;
-          height: 13px;
-        }
+      img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
       }
     }
   }

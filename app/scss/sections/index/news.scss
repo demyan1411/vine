@@ -15,7 +15,7 @@
   }
   &__block {
     width: 320px;
-    height: 335px;
+    height: 360px;
     background: #f8f6f4;
     border: 1px solid transparent;
     padding: 45px 22px 23px 25px;
@@ -35,6 +35,9 @@
         color: #000;
       }
     }
+  }
+  &__img {
+    display: block;
   }
   &__date {
     font-family: $fsbki;

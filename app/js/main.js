@@ -1,5 +1,11 @@
 'use strict';
+
 $(document).ready(function() {
+
+  var mobile = navigator.userAgent.toLowerCase().match(/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i);
+  if(mobile != null) {
+    $('html').css({'width': window.innerWidth + 'px', 'box-sizing': 'border-box'});
+  }
 
   $('select').styler()
 

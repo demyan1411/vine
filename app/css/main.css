@@ -487,7 +487,7 @@ body {
 
 .index-news__block {
   width: 320px;
-  height: 335px;
+  height: 360px;
   background: #f8f6f4;
   border: 1px solid transparent;
   padding: 45px 22px 23px 25px;
@@ -501,6 +501,9 @@ body {
     border: 1px solid #ae915f; }
     .index-news__block:hover .index-news__name {
       color: #000; }
+
+.index-news__img {
+  display: block; }
 
 .index-news__date {
   font-family: "FedraSansPro-BookItalic";
@@ -1346,46 +1349,30 @@ body {
     color: #757575;
     margin-bottom: 9px; }
   .post__share-links {
-    width: 580px; }
+    width: 590px; }
   .post__share-link {
     font-size: 14px;
     line-height: 17px;
     margin-left: 15px;
     text-decoration: underline; }
-    .post__share-link:before {
-      content: '';
-      width: 16px;
-      height: 16px;
-      display: inline-block;
-      vertical-align: middle;
-      margin-right: 3px; }
     .post__share-link:hover {
       text-decoration: none; }
     .post__share-link:first-of-type {
       margin-left: 8px; }
     .post__share-link.vk {
       color: #526e8f; }
-      .post__share-link.vk:before {
-        background: url(../img/vk.jpg) 0 0 no-repeat; }
     .post__share-link.fb {
       color: #425497; }
-      .post__share-link.fb:before {
-        background: url(../img/fb.jpg) 0 0 no-repeat; }
     .post__share-link.od {
       color: #e27e35; }
-      .post__share-link.od:before {
-        background: url(../img/od.jpg) 0 0 no-repeat; }
     .post__share-link.go {
       color: #dd4241; }
-      .post__share-link.go:before {
-        background: url(../img/go.jpg) 0 0 no-repeat;
-        width: 17px; }
     .post__share-link.tw {
       color: #40c9f1; }
-      .post__share-link.tw:before {
-        background: url(../img/tw.jpg) 0 0 no-repeat;
-        width: 17px;
-        height: 13px; }
+    .post__share-link img {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px; }
   .post__shared {
     font-size: 14px;
     line-height: 18px;
