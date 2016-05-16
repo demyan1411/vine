@@ -12,6 +12,7 @@
   p {
     font-size: 14px;
     line-height: 18px;
+    margin: 0;
     margin-bottom: 15px;
 
     a {
@@ -26,6 +27,10 @@
   }
   ul, li {
     list-style: none;
+  }
+
+  ul {
+    margin-bottom: 15px;
   }
 
   li {
@@ -45,10 +50,11 @@
     width: 308px;
     height: 208px;
     margin-right: 17px;
-    margin-bottom: 43px;
+    margin-bottom: 35px;
     padding: 4px;
     background: url(../img/about/border.png) 0 0 no-repeat;
     clear: both;
+    display: block;
   }
 
   &__images {

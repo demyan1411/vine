@@ -24,13 +24,13 @@ Bottle.prototype._checkWindowWidth = function () {
   if ($(window).width() > 1215) {
     this._rightCoord = 207;
   } else {
-    this._rightCoord = 82;
+    this._rightCoord = 165;
   }
 }
 
 Bottle.prototype._moveBottle = function (rightCoord) {
   $('.js-main-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
-    $(".js-main-slider .slick-active .main-slider__bottle").animate({right: rightCoord + 68 + 'px'}, 150);
+    $(".js-main-slider .slick-active .main-slider__bottle").animate({right: rightCoord + 70 + 'px'}, 150);
   })
   .on('beforeChange', function(event, slick, currentSlide, nextSlide){
     $(".js-main-slider .slick-active .main-slider__bottle").animate({right: rightCoord + 'px'}, 150);

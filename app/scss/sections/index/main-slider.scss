@@ -17,6 +17,7 @@
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
+    background-size: contain;
     position: relative;
 
     &--1 {
@@ -33,6 +34,7 @@
   &__bottle {
     position: absolute;
     right: 207px;
+    height: 418px;
     top: 0;
   }
 
@@ -135,7 +137,8 @@
     }
 
     &__bottle {
-      right: 82px;
+      right: 165px;
+      height: 355px;
     }
   }
 }

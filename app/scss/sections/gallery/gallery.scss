@@ -39,6 +39,14 @@
     width: 500px;
     height: 100%;
     margin: 0 45px;
+    position: relative;
+  }
+  &__main-img {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
   &__min-slider {
     display: inline-block;

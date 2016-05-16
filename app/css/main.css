@@ -384,6 +384,7 @@ body {
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
+    background-size: contain;
     position: relative; }
     .main-slider__slide:before, .main-slider__slide:after {
       content: " ";
@@ -399,6 +400,7 @@ body {
   .main-slider__bottle {
     position: absolute;
     right: 207px;
+    height: 418px;
     top: 0; }
   .main-slider__left {
     width: 50%;
@@ -474,7 +476,8 @@ body {
     .main-slider .slick-next {
       right: 18px; }
     .main-slider__bottle {
-      right: 82px; } }
+      right: 165px;
+      height: 355px; } }
 
 .index-news .wrapper {
   border-top: 1px solid #ae915f;
@@ -1866,6 +1869,7 @@ body {
 .about p {
   font-size: 14px;
   line-height: 18px;
+  margin: 0;
   margin-bottom: 15px; }
   .about p a {
     color: #ae915f;
@@ -1878,6 +1882,9 @@ body {
 
 .about ul, .about li {
   list-style: none; }
+
+.about ul {
+  margin-bottom: 15px; }
 
 .about li:before {
   content: '';
@@ -1893,10 +1900,11 @@ body {
   width: 308px;
   height: 208px;
   margin-right: 17px;
-  margin-bottom: 43px;
+  margin-bottom: 35px;
   padding: 4px;
   background: url(../img/about/border.png) 0 0 no-repeat;
-  clear: both; }
+  clear: both;
+  display: block; }
 
 .about__images {
   clear: both;
@@ -1995,7 +2003,17 @@ body {
 .gallery__main-slide {
   width: 500px;
   height: 100%;
-  margin: 0 45px; }
+  margin: 0 45px;
+  position: relative; }
+
+.gallery__main-img {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
 
 .gallery__min-slider {
   display: inline-block;
@@ -2022,6 +2040,8 @@ body {
   background: url(../img/enter.jpg) center top no-repeat;
   width: 100%;
   height: 100%;
+  min-height: 573px;
+  min-width: 799px;
   position: relative; }
   .enter__block {
     width: 799px;
@@ -2058,7 +2078,9 @@ body {
     .enter__select--months + .jq-selectbox__select .jq-selectbox__select-text {
       width: 70px !important; }
   .enter__select--days + .jq-selectbox__select {
-    width: 72px; }
+    width: 80px; }
+    .enter__select--days + .jq-selectbox__select .jq-selectbox__select-text {
+      width: 40px !important; }
   .enter__select--years + .jq-selectbox__select {
     width: 70px; }
   .enter__italic {
