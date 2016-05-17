@@ -1432,7 +1432,16 @@ body {
     padding: 65px 73px; }
     .post__slider .js-post-slide {
       width: 500px;
-      height: 331px; }
+      height: 331px;
+      position: relative; }
+    .post__slider .post-slide__img {
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: auto;
+      height: 100%; }
     .post__slider .slick-next {
       right: 32px; }
     .post__slider .slick-prev {

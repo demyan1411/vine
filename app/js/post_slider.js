@@ -30,7 +30,11 @@ PostSlider.prototype.getImages = function() {
 
 PostSlider.prototype.createSlides = function() {
   this.getImages().forEach(function(imageUrl) {
-    this.postSlider.append('<img class="js-post-slide" src="' + imageUrl + '">');
+    var slide = document.createElement('div');
+    $(slide)
+      .addClass('js-post-slide')
+      .html('<img class="post-slide__img" src="' + imageUrl + '">');
+    this.postSlider.append(slide);
   }, this);
 }
 
